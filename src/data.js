@@ -27,9 +27,8 @@ const computation = () =>{
 };
 
 
-
 window.example = {
-  example,
-  filter,
-  computation
+example,
+filter, 
+computation
 };
