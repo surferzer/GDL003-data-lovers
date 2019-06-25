@@ -11,22 +11,22 @@ describe('example', () => {
   });
 });
 
-describe('filtrado',() => {
-  it('is a function',()=> {
-    expect(typeof example.filtrado).toBe('function');
+describe('filter',() =>{
+  it('is a function', () =>{
+    expect(typeof example.filter).toBe('function');
   });
 
-  it('returns `filtrado`', () =>{
-    expect(example.filtrado()).toBe("filtrado");
+  it('returns `filter`', () => {
+    expect(example.filter()).toBe('filter');
   });
 });
 
-describe('calculo', ()=> {
-  it('is a function',() => {
-    expect (typeof example.calculo).toBe('function');
+describe('computation',()=>{
+  it('is a function', ()=>{
+    expect(typeof example.computation).toBe('function');
   });
 
-it('returns `calculo`',() =>{
-  expect(example.calculo()).toBe("calculo");
- });
+  it('returns `computation`',()=>{
+    expect(example.computation()).toBe('computation');
+  });
 });
