@@ -8,7 +8,6 @@
   <body>
     <div id="root"></div>
     <section id= "screen1"></section>
-    
     <script src="./data/rickandmorty/rickandmorty.js"></script>
     <!-- <script src="./data/rickandmorty/rickandmorty.json"></script> -->
     <!-- <script src="./data/injuries/injuries.js"></script>
@@ -22,14 +21,14 @@
 
 <!--PORTADA-->
 
-<section id= welcome style.display= "none">
-  <header><h1>WELCOME TO RICK AND MORTY'S UNIVERSE <h1></header>
+<section id= welcome onload="inicio()">
+  <header><h1>Welcome to Rick & Morty's UNIVERSE <h1></header>
   <input type="button" value="Pulsa aqui!" onclick="start()" class="firstButton" >
 </section>
 
 <!--PAGINA 2-->
 
-<section id=rick style.display= "none">
+<section id=rick style="display:none;">
 <h1> Rick & Morty's UNIVERSE </h1>
 <br>
 <subsection><center><p>The series raises the curious relationship of Rick, the uncontrolled mad scientist grandfather of Morty, Rick uses his grandson as a traveling companion to parallel worlds and alien planets.
@@ -39,7 +38,7 @@
 </section>
 
 <!--PAGINA 3-->
-<section id= lookFor style.display= "none">
+<section id= lookFor style="display:none;">
 <h1> P E R S O N A J E S </h1>
 <input type="button" value="NAME" class="name" onclick="()">
 <input type="button" value="Death" class="death" onclick="()">
@@ -51,7 +50,7 @@
 <input type="button" value="Humans" class="humans" onclick="()">
 <input type="button" value="Episode" class="episode" onclick="()">
 <br>
-<input type="button" value="BACK" class="back" onclick="()">
+<input type="button" value="BACK" class="back" onclick="back()">
 </section>
 <!--PAGINA 4-->
 
