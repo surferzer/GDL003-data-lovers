@@ -1,15 +1,4 @@
 
-document.getElementById('screen1').innerHTML='Los nombres de personajes son: '+ window.example.filter(RICKANDMORTY.results);
-
-
-
-/*
-//INICIO//
-
-welcome.style.display="block";
-rick.style.display="none";
-lookFor.style.display="none";
-
 
 //INICIO//
 
@@ -19,6 +8,7 @@ function inicio(){
 document.getElementById("welcome").style.display="block";
 document.getElementById("rick").style.display="none";
 document.getElementById("lookFor").style.display="none";
+document.getElementById("lastPage").style.display="none";
 }
 
 
@@ -27,18 +17,31 @@ function start(){
 welcome.style.display="none";
 rick.style.display="block";
 lookFor.style.display="none";
+lastPage.style.display="none";
 }
 
 function knowMore(){
 welcome.style.display="none";
 rick.style.display="none";
 lookFor.style.display="block";
+lastPage.style.display="none";
 }
 
-function name(){}
+//document.getElementsByClassName('names').addEventListener('click',name)
+function showName(){
+  welcome.style.display="none";
+  rick.style.display="none";
+  lookFor.style.display="none";
+  lastPage.style.display="block";
+  document.getElementById('lastPage').innerHTML='Los nombres de personajes son: '+ '<br>' + window.example.filter(RICKANDMORTY.results);
+  }
+  
+
+
+
 
 function death(){}
-'returns `filter`'
+
 function alive(){}
 
 function aliens(){}
@@ -52,14 +55,13 @@ function men(){}
 function humans(){}
 
 function episode(){}
-data-lodata-loversvers
+
 function back(){
   welcome.style.display="none";
   rick.style.display="block";
   lookFor.style.display="none";
   }
 
-*/
 
 function home(){
   welcome.style.display="block";
