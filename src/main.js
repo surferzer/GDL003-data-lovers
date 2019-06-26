@@ -47,3 +47,17 @@ function back(){
   rick.style.display="block";
   lookFor.style.display="none";
   }
+
+function home(){
+  welcome.style.display="block";
+  rick.style.display="none";
+  lookFor.style.display="none";
+  lastPage.style.display="none";
+}
+
+function back2(){
+  welcome.style.display="none";
+  rick.style.display="none";
+  lookFor.style.display="block";
+  lastPage.style.display="none";
+}
