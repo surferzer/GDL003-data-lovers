@@ -2,15 +2,6 @@
 document.getElementById('screen1').innerHTML='Los nombres de personajes son: '+ window.example.filter(RICKANDMORTY.results);
 
 
-
-/*
-//INICIO//
-
-welcome.style.display="block";
-rick.style.display="none";
-lookFor.style.display="none";
-
-
 //INICIO//
 
 
@@ -59,7 +50,6 @@ function back(){
   lookFor.style.display="none";
   }
 
-*/
 
 function home(){
   welcome.style.display="block";
