@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Data Lovers</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
     <div id="root"></div>
@@ -15,11 +15,34 @@
 
 <section id="welcome">
   <header><h1>WELCOME TO RICK AND MORTY'S UNIVERSE </h1></header>
-  <input type="button" value="Pulsa aqui!"  class="firstButton" >
+  <input type="button" value="Pulsa aqui!"  class="firstButton"
+         
+    <script src="./data/rickandmorty/rickandmorty.js"></script>
+    <!-- <script src="./data/rickandmorty/rickandmorty.json"></script> -->
+    <!-- <script src="./data/injuries/injuries.js"></script>
+    <script src="./data/rickandmorty/rickandmorty.js"></script>
+    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
+    <!-- <script src="./data/steam/steam.js"></script> -->
+    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
+    <!-- <script src="./data/lol/lol.js"></script> -->
+    <script src="data.js"></script>
+    <script src="main.js"></script>
+
+<!--PORTADA-->
+
+<section id= welcome onload="inicio()">
+  <header><h1>Welcome to Rick & Morty's UNIVERSE <h1></header>
+  <input type="button" value="Pulsa aqui!" onclick="start()" class="firstButton" >
+
 </section>
 <!--PAGINA 2-->
 
+
 <section id="rick">
+
+<section id=rick style="display:none;">
+
+  
 <h1> Rick & Morty's UNIVERSE </h1>
 <br>
 <subsection><center><p>The series raises the curious relationship of Rick, the uncontrolled mad scientist grandfather of Morty, Rick uses his grandson as a traveling companion to parallel worlds and alien planets.
@@ -29,7 +52,11 @@
 </section>
 
 <!--PAGINA 3-->
+
 <section id= "lookFor">
+
+<section id= lookFor style="display:none;">
+
 <h1> P E R S O N A J E S </h1>
 <input type="button" value="NAME" class="name" >
 <input type="button" value="Death" class="death" >
@@ -41,6 +68,7 @@
 <input type="button" value="Humans" class="humans" >
 <input type="button" value="Episode" class="episode" >
 <br>
+
 <input type="button" value="BACK" class="back">
 </section>
 <!--PAGINA 4-->
@@ -57,5 +85,15 @@
 <!-- <script src="./data/lol/lol.js"></script> -->
 <script src="data.js"></script>
 <script src="main.js"></script>
+
+<input type="button" value="BACK" class="back" onclick="back()">
+</section>
+
+<!--PAGINA 4-->
+<section id=lastPage style="display:none"</section>
+<input type="button" value="HOME" class="reload" onclick="home()">
+<input type="button" value="BACK" class="reloadAfter" onclick="back2()">
+
+r
   </body>
 </html>

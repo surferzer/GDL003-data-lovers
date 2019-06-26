@@ -12,13 +12,12 @@ const filter = (data) => {
     let runner=data[i].name;
     console.log(data[i].name);
     searchName+=runner+'<br>';
-    
   }
   //name=myData.results[0].name;
   //console.log(myData.results[0].name);
-
-  return searchName;
+  return searchName
 };
+
 
 const computation = () =>{
   return 'computation';
@@ -27,6 +26,6 @@ const computation = () =>{
 
 window.example = {
 example,
-filter, 
+filter,
 computation
 };
