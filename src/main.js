@@ -1,7 +1,18 @@
 
-document.getElementById('screen1').innerHTML='Los nombres de personajes son: '+ window.example.filter();
+document.getElementById('screen1').innerHTML='Los nombres de personajes son: '+ window.example.filter(RICKANDMORTY.results);
+
+
+
+/*
+//INICIO//
+
+welcome.style.display="block";
+rick.style.display="none";
+lookFor.style.display="none";
+
 
 //INICIO//
+
 
 //welcome.style.display="";
 function inicio(){
@@ -27,7 +38,7 @@ lookFor.style.display="block";
 function name(){}
 
 function death(){}
-
+'returns `filter`'
 function alive(){}
 
 function aliens(){}
@@ -41,12 +52,14 @@ function men(){}
 function humans(){}
 
 function episode(){}
-
+data-lodata-loversvers
 function back(){
   welcome.style.display="none";
   rick.style.display="block";
   lookFor.style.display="none";
   }
+
+*/
 
 function home(){
   welcome.style.display="block";
