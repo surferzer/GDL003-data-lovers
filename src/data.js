@@ -1,18 +1,16 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
 //eval('(' + RICKANDMORTY + ')'); (eval es mas verbose por el doble parentesis)
-
 const example = () => {
   return 'example';
 };
 
-const filter = () => {
+const filter = (data) => {
+  console.log(data);
   let searchName='';
-  let myData=RICKANDMORTY;
-
-  for(let i=0;i<myData.results.length;i++){
-    let runner=myData.results[i].name;
-    console.log(myData.results[i].name);
+  for(let i=0;i<data.length;i++){
+    let runner=data[i].name;
+    console.log(data[i].name);
     searchName+=runner+'<br>';
     
   }

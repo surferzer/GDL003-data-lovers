@@ -7,10 +7,16 @@
   },
   "extends": "eslint:recommended",
   "globals": {
+    "RICKANDMORTY": false,
     "example": false
   },
   "rules": {
     "no-console": 0,
-    "semi": 2,
+    "semi": 2
   }
 }
+
+
+
+
+

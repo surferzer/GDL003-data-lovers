@@ -1,8 +1,10 @@
 
-document.getElementById('screen1').innerHTML='Los nombres de personajes son: '+ window.example.filter();
+document.getElementById('screen1').innerHTML='Los nombres de personajes son: '+ window.example.filter(RICKANDMORTY.results);
 
-//INICIO//
+
 /*
+//INICIO//
+
 welcome.style.display="block";
 rick.style.display="none";
 lookFor.style.display="none";
@@ -31,7 +33,7 @@ lookFor.style.display="block";
 function name(){}
 
 function death(){}
-
+'returns `filter`'
 function alive(){}
 
 function aliens(){}
@@ -55,5 +57,4 @@ function back(){
   rick.style.display="block";
   lookFor.style.display="none";
   }
-
 */

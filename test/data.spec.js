@@ -1,5 +1,5 @@
 require('../src/data.js');
-
+const RICKANDMORTY = require('../src/data/rickandmorty/rickandmorty.js');
 
 describe('example', () => {
   it('is a function', () => {
@@ -17,7 +17,7 @@ describe('filter',() =>{
   });
 
   it('returns `filter`', () => {
-    expect(example.filter()).toBe('filter');
+    expect(example.filter(RICKANDMORTY)).toBe('string');
   });
 });
 
