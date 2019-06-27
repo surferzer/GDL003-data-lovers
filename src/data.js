@@ -5,21 +5,29 @@ const example = () => {
   return 'example';
 };
 
-const filter = (data, boton) => {
+const filter = (data, button) => {
   let searchData='';
-  if(boton.value == "Name"){
-    //console.log(data);
+  if(button.value == "Name"){
+    console.log(data);
+    //let nameCharacter='';
+    //let imgCharacter='';
     for(let i=0;i<data.length;i++){
       let runner=data[i].name;
       console.log(data[i].name);
-      searchData+=runner+'<br>';
+      searchData+=runner+`<br>`;
+      //nameCharacter+= runner;
+      //console.log(nameCharacter);
     }
-  }else if(boton.value == "Dead"){
-      //console.log(data);
+    
+  }else if(button.value == "Dead"){
+      console.log(data);
         for(let i=0;i<data.length;i++){
         let runner=data[i].status;
         console.log(data[i].status);
-        searchData+=runner+'<br>';
+        if(runner== "Dead"){
+          searchData+=runner+`<br>`;
+        }
+      
       }
   }
   //name=myData.results[0].name;
@@ -27,6 +35,17 @@ const filter = (data, boton) => {
   return searchData;
 };
 
+const picture = (data, button) =>{
+  let picData='';
+  if(button.value == "Name"){
+    for(let i=0;i<data.length;i++){
+      let runner=data[i].image;
+      console.log(data[i].image);
+      picData+=runner+`<br>`;
+    } 
+  }
+  return picData;
+};
 
 const computation = () =>{
   return 'computation';
@@ -36,5 +55,6 @@ const computation = () =>{
 window.example = {
 example,
 filter,
-computation
+computation,
+picture
 };
