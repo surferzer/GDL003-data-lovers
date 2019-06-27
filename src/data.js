@@ -5,17 +5,26 @@ const example = () => {
   return 'example';
 };
 
-const filter = (data) => {
-  console.log(data);
-  let searchName='';
-  for(let i=0;i<data.length;i++){
-    let runner=data[i].name;
-    console.log(data[i].name);
-    searchName+=runner+'<br>';
+const filter = (data, boton) => {
+  let searchData='';
+  if(boton.value == "Name"){
+    //console.log(data);
+    for(let i=0;i<data.length;i++){
+      let runner=data[i].name;
+      console.log(data[i].name);
+      searchData+=runner+'<br>';
+    }
+  }else if(boton.value == "Dead"){
+      //console.log(data);
+        for(let i=0;i<data.length;i++){
+        let runner=data[i].status;
+        console.log(data[i].status);
+        searchData+=runner+'<br>';
+      }
   }
   //name=myData.results[0].name;
   //console.log(myData.results[0].name);
-  return searchName
+  return searchData;
 };
 
 

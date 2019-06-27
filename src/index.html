@@ -8,7 +8,7 @@
   <body>
   <div id= root></div>
 
-  
+
 <!--PORTADA-->
 
 <section id= welcome onload="inicio()">
@@ -19,7 +19,7 @@
 <!--PAGINA 2-->
 
 
-<section id=rick style="display:none;">  
+<section id=rick style="display:none;">
 <h1> Rick & Morty's UNIVERSE </h1>
 <br>
 <subsection><p>The series raises the curious relationship of Rick, the uncontrolled mad scientist grandfather of Morty, Rick uses his grandson as a traveling companion to parallel worlds and alien planets.
@@ -34,13 +34,13 @@
 <section id= lookFor style="display:none;">
 
 <h1> P E R S O N A J E S </h1>
-<input type="button" value="NAME" class="names" onclick="showName()">
-<input type="button" value="Death" class="death" >
-<input type="button" value="ALIVE" class="alive" >
+<input type="button" value="Name" class="names" onclick="showName()">
+<input type="button" value="Dead" class="dead" onclick="showDead()">
+<input type="button" value="Alive" class="alive" >
 <input type="button" value="Aliens" class="aliens" >
 <input type="button" value="Earth" class="earth" >
 <input type="button" value="Women" class="women" >
-<input type="button" value="MEN" class="men" >
+<input type="button" value="Men" class="men" >
 <input type="button" value="Humans" class="humans" >
 <input type="button" value="Episode" class="episode" >
 <br>
@@ -50,6 +50,7 @@
 
 <!--PAGINA 4-->
 <section id=lastPage style="display:none">
+<subsection id= "showData"></subsection>
 <input type="button" value="HOME" class="reload" onclick="home()">
 <input type="button" value="BACK" class="reloadAfter" onclick="back2()">
 </section>
