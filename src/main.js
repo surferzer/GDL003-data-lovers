@@ -5,7 +5,7 @@ const welcomeHome = ()=>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="none";
 };
-document.querySelector('.firstButton').addEventListener('onload',welcomeHome());
+document.querySelector('#body').addEventListener('onload',welcomeHome());
 document.querySelector('.reload').addEventListener('click',welcomeHome);
 
 //FUNCION PAGINA 1 / PAG-RICK
@@ -37,6 +37,7 @@ const showName = ()=>{
   window.example.filter(RICKANDMORTY.results, boton)+window.example.picture(RICKANDMORTY.results, boton);
 };
 document.querySelector('.names').addEventListener('click',showName);
+
 //FUNCION BOTON MOSTRAR STATUS DEAD /PAG-LASTPAGE
 const showDead = () =>{
   document.querySelector('#welcome').style.display="none";
@@ -48,19 +49,39 @@ const showDead = () =>{
 };
 document.querySelector('.dead').addEventListener('click', showDead);
 
-//function alive(){}
+//FUNCION BOTON MOSTRAR GENDER MALE/ PAG-LASTPAGE
+const showMale = () =>{
+  document.querySelector('#welcome').style.display="none";
+  document.querySelector('#rick').style.display="none";
+  document.querySelector('#lookFor').style.display="none";
+  document.querySelector('#lastPage').style.display="block";
+  let button = document.querySelector('.male');
+  document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
+};
+document.querySelector('.male').addEventListener('click', showMale);
 
-//function aliens(){}
+//FUNCION BOTON MOSTRAR SPECIES HUMAN/ PAG-LASTPAGE
+const showHuman = () =>{
+  document.querySelector('#welcome').style.display="none";
+  document.querySelector('#rick').style.display="none";
+  document.querySelector('#lookFor').style.display="none";
+  document.querySelector('#lastPage').style.display="block";
+  let button = document.querySelector('.humans  ');
+  document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
+};
+document.querySelector('.humans').addEventListener('click', showHuman);
 
-//function earth(){}
+//FUNCION BOTON MOSTRAR EPISODE/ PAG-LASTPAGE
+const showEpisode = () =>{
+  document.querySelector('#welcome').style.display="none";
+  document.querySelector('#rick').style.display="none";
+  document.querySelector('#lookFor').style.display="none";
+  document.querySelector('#lastPage').style.display="block";
+  let button = document.querySelector('.episode');
+  document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
+};
+document.querySelector('.episode').addEventListener('click', showEpisode);
 
-//function women(){}
-
-//function men(){}
-
-//function humans(){}
-
-//function episode(){}
 
 //FUNCION BOTON REGRESAR DE PAG 3  A PAG2
 const back =()=>{

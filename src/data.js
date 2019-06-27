@@ -29,6 +29,32 @@ const filter = (data, button) => {
         }
       
       }
+  }else if(button.value == "Male"){
+    console.log(data);
+    for(let i=0;i<data.length;i++){
+      let runner=data[i].gender;
+      console.log(data[i].gender);
+      if(runner== "Male"){
+        searchData+=runner+`<br>`;
+      }
+    }
+  }else if(button.value == "Humans"){
+    console.log(data);
+    for(let i=0;i<data.length;i++){
+      let runner=data[i].species;
+      console.log(data[i].species);
+      if(runner== "Human"){
+        searchData+=runner+`<br>`;
+      }
+
+    }
+  }else if(button.value == "Episode"){
+    console.log(data);
+    for(let i=0;i<data.length;i++){
+      let runner=data[i].episode;
+      console.log(data[i].episode);
+      searchData+=runner+`<br>`;
+    }
   }
   //name=myData.results[0].name;
   //console.log(myData.results[0].name);
