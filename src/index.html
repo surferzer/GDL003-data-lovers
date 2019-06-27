@@ -6,65 +6,65 @@
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-  <div id= root></div>
+     <div id="root"></div>
 
 
-<!--PORTADA-->
+    <!--PORTADA-->
+    <section id="welcome">
+    <header><h1>Welcome to Rick & Morty's UNIVERSE </h1></header>
+    <input type="button" value="Pulsa aqui!"  class="firstButton" >
+    </section>
 
-<section id= welcome onload="inicio()">
-  <header><h1>Welcome to Rick & Morty's UNIVERSE <h1></header>
-  <input type="button" value="Pulsa aqui!" onclick="start()" class="firstButton" >
-</section>
+    <!--PAGINA 2-->
+    <section id="rick" >
+      <h1> Rick & Morty's UNIVERSE </h1>
+      <br>
+      <subsection>
+        <p>
+          The series raises the curious relationship of Rick, 
+          the uncontrolled mad scientist grandfather of Morty, 
+          Rick uses his grandson as a traveling companion to parallel 
+          worlds and alien planets.
+        </p>
+      </subsection>
+      <aside>
+        <input type="button" value="I WANT TO KNOW MORE..." class="knowMore" >
+      </aside>
+    </section>
 
-<!--PAGINA 2-->
+    <!--PAGINA 3-->
+    <section id="lookFor" >
+      <h1> P E R S O N A J E S </h1>
+      <input type="button" value="Name" class="names" >
+      <input type="button" value="Dead" class="dead" >
+      <input type="button" value="Alive" class="alive" >
+      <input type="button" value="Aliens" class="aliens" >
+      <input type="button" value="Earth" class="earth">
+      <input type="button" value="Women" class="women" >
+      <input type="button" value="Men" class="men" >
+      <input type="button" value="Humans" class="humans" >
+      <input type="button" value="Episode" class="episode" >
+      <br>
+      <input type="button" value="BACK" class="back" >
+    </section>
 
+    <!--PAGINA 4-->
+    <section id="lastPage" >
+      <subsection id="showData"></subsection>
+      <input type="button" value="HOME" class="reload" >
+      <input type="button" value="BACK" class="reloadAfter">
+    </section>
 
-<section id=rick style="display:none;">
-<h1> Rick & Morty's UNIVERSE </h1>
-<br>
-<subsection><p>The series raises the curious relationship of Rick, the uncontrolled mad scientist grandfather of Morty, Rick uses his grandson as a traveling companion to parallel worlds and alien planets.
-</p></subsection>
-
-<aside><input type="button" value="I WANT TO KNOW MORE..." class="knowMore" onclick="knowMore()"></aside>
-</section>
-
-<!--PAGINA 3-->
-
-
-<section id= lookFor style="display:none;">
-
-<h1> P E R S O N A J E S </h1>
-<input type="button" value="Name" class="names" onclick="showName()">
-<input type="button" value="Dead" class="dead" onclick="showDead()">
-<input type="button" value="Alive" class="alive" >
-<input type="button" value="Aliens" class="aliens" >
-<input type="button" value="Earth" class="earth" >
-<input type="button" value="Women" class="women" >
-<input type="button" value="Men" class="men" >
-<input type="button" value="Humans" class="humans" >
-<input type="button" value="Episode" class="episode" >
-<br>
-
-<input type="button" value="BACK" class="back" onclick="back()">
-</section>
-
-<!--PAGINA 4-->
-<section id=lastPage style="display:none">
-<subsection id= "showData"></subsection>
-<input type="button" value="HOME" class="reload" onclick="home()">
-<input type="button" value="BACK" class="reloadAfter" onclick="back2()">
-</section>
-
-<script src="./data/rickandmorty/rickandmorty.js"></script>
-<!-- <script src="./data/rickandmorty/rickandmorty.json"></script> -->
-<!-- <script src="./data/injuries/injuries.js"></script>-->
-<!--<script src="./data/rickandmorty/rickandmorty.js"></script>-->
-<!-- <script src="./data/pokemon/pokemon.js"></script> -->
-<!-- <script src="./data/steam/steam.js"></script> -->
-<!-- <script src="./data/worldbank/worldbank.js"></script> -->
-<!-- <script src="./data/lol/lol.js"></script> -->
-<script src="data.js"></script>
-<script src="main.js"></script>
+    <script src="./data/rickandmorty/rickandmorty.js"></script>
+    <!-- <script src="./data/rickandmorty/rickandmorty.json"></script> -->
+    <!-- <script src="./data/injuries/injuries.js"></script>-->
+    <!--<script src="./data/rickandmorty/rickandmorty.js"></script>-->
+    <!-- <script src="./data/pokemon/pokemon.js"></script> -->
+    <!-- <script src="./data/steam/steam.js"></script> -->
+    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
+    <!-- <script src="./data/lol/lol.js"></script> -->
+    <script src="data.js"></script>
+    <script src="main.js"></script>
 
   </body>
 </html>
