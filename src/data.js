@@ -18,7 +18,7 @@ const filter = (data, button) => {
       //nameCharacter+= runner;
       //console.log(nameCharacter);
     }
-    
+
   }else if(button.value == "Dead"){
       console.log(data);
         for(let i=0;i<data.length;i++){
@@ -27,9 +27,42 @@ const filter = (data, button) => {
         if(runner== "Dead"){
           searchData+=runner+`<br>`;
         }
-      
       }
-  }else if(button.value == "Male"){
+  }else if(button.value == "Alive"){
+    console.log(data);
+    for(let i=0;i<data.length;i++){
+    let runner=data[i].status;
+    console.log(data[i].status);
+    if(runner == "Alive"){
+      searchData+=runner+`<br>`
+    }
+    }
+  }else if(button.value == "Aliens")
+    console.log(data);
+    for(let i=0;i<data.length;i++){
+      let runner=data[i].species;
+      console.log(data[i].species);
+      if (runner == "Alien"){
+        searchData+=runner+`<br>`
+    }
+    }
+  }else if(button.value == "Origin"){
+    console.log(data);
+    for(let i=0;i<data.length;i++){
+      let runner=data[i].origin.name;
+      console.log(data[i].origin.name);
+        searchData+=runner+`<br>`;
+    }
+  }else if(button.value == "Female"){
+    console.log(data);
+    for(let i=0;i<data.length;i++){
+      let runner=data[i].gender;
+      console.log(data[i].gender);
+      if (runner == "Female"){
+        searchData+=runner+`<br>`
+    }
+    }
+  } else if(button.value == "Male"){
     console.log(data);
     for(let i=0;i<data.length;i++){
       let runner=data[i].gender;
@@ -41,8 +74,8 @@ const filter = (data, button) => {
   }else if(button.value == "Humans"){
     console.log(data);
     for(let i=0;i<data.length;i++){
-      let runner=data[i].species;
-      console.log(data[i].species);
+      let runner=data[i].gender;
+      console.log(data[i].gender);
       if(runner== "Human"){
         searchData+=runner+`<br>`;
       }
@@ -54,8 +87,8 @@ const filter = (data, button) => {
       let runner=data[i].episode;
       console.log(data[i].episode);
       searchData+=runner+`<br>`;
-    }
-  }
+      
+
   //name=myData.results[0].name;
   //console.log(myData.results[0].name);
   return searchData;
@@ -68,7 +101,7 @@ const picture = (data, button) =>{
       let runner=data[i].image;
       console.log(data[i].image);
       picData+=runner+`<br>`;
-    } 
+    }
   }
   return picData;
 };
