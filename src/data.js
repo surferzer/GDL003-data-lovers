@@ -26,8 +26,8 @@ const filter = (data, button) => {
         console.log(data[i].status);
         if(runner== "Dead"){
           searchData+=runner+`<br>`;
-    }
-    }
+        }
+      }
   }else if(button.value == "Alive"){
     console.log(data);
     for(let i=0;i<data.length;i++){
@@ -37,7 +37,7 @@ const filter = (data, button) => {
       searchData+=runner+`<br>`
     }
     }
-  }else if(button.value == "Aliens"){
+  }else if(button.value == "Aliens")
     console.log(data);
     for(let i=0;i<data.length;i++){
       let runner=data[i].species;
@@ -62,7 +62,32 @@ const filter = (data, button) => {
         searchData+=runner+`<br>`
     }
     }
-  }
+  } else if(button.value == "Male"){
+    console.log(data);
+    for(let i=0;i<data.length;i++){
+      let runner=data[i].gender;
+      console.log(data[i].gender);
+      if(runner== "Male"){
+        searchData+=runner+`<br>`;
+      }
+    }
+  }else if(button.value == "Humans"){
+    console.log(data);
+    for(let i=0;i<data.length;i++){
+      let runner=data[i].gender;
+      console.log(data[i].gender);
+      if(runner== "Human"){
+        searchData+=runner+`<br>`;
+      }
+
+    }
+  }else if(button.value == "Episode"){
+    console.log(data);
+    for(let i=0;i<data.length;i++){
+      let runner=data[i].episode;
+      console.log(data[i].episode);
+      searchData+=runner+`<br>`;
+      
 
   //name=myData.results[0].name;
   //console.log(myData.results[0].name);

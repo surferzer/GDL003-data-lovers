@@ -5,7 +5,7 @@ const welcomeHome = ()=>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="none";
 };
-document.querySelector('.firstButton').addEventListener('onload',welcomeHome());
+document.querySelector('#body').addEventListener('onload',welcomeHome());
 document.querySelector('.reload').addEventListener('click',welcomeHome);
 
 //FUNCION PAGINA 1 / PAG-RICK
@@ -37,6 +37,7 @@ const showName = ()=>{
   window.example.filter(RICKANDMORTY.results, boton)+window.example.picture(RICKANDMORTY.results, boton);
 };
 document.querySelector('.names').addEventListener('click',showName);
+
 //FUNCION BOTON MOSTRAR STATUS DEAD /PAG-LASTPAGE
 const showDead = () =>{
   document.querySelector('#welcome').style.display="none";
@@ -49,7 +50,7 @@ const showDead = () =>{
 document.querySelector('.dead').addEventListener('click', showDead);
 
 //FUNCTION ALIVE
-const showAlive = () =>{
+const showAlive = () 
   document.querySelector('#welcome').style.display="none";
   document.querySelector('#rick').style.display="none";
   document.querySelector('#lookFor').style.display="none";
@@ -70,7 +71,7 @@ const showAliens =() =>{
 };
 document.querySelector('.aliens').addEventListener('click', showAliens)
 
-//FUNCTION EARTH
+//FUNCTION ORIGIN
 const showOrigin =() =>{
   document.querySelector('#welcome').style.display="none";
   document.querySelector('#rick').style.display="none";
@@ -80,7 +81,7 @@ const showOrigin =() =>{
   document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.origin').addEventListener('click', showOrigin)
-
+//FUNCTION FEMALE
 const showFemale =() =>{
   document.querySelector('#welcome').style.display="none";
   document.querySelector('#rick').style.display="none";
@@ -91,13 +92,40 @@ const showFemale =() =>{
 };
 document.querySelector('.female').addEventListener('click', showFemale)
 
-//function women(){}
 
-//function men(){}
+//FUNCION BOTON MOSTRAR GENDER MALE/ PAG-LASTPAGE
+const showMale = () =>{
+  document.querySelector('#welcome').style.display="none";
+  document.querySelector('#rick').style.display="none";
+  document.querySelector('#lookFor').style.display="none";
+  document.querySelector('#lastPage').style.display="block";
+  let button = document.querySelector('.male');
+  document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
+};
+document.querySelector('.male').addEventListener('click', showMale);
 
-//function humans(){}
+//FUNCION BOTON MOSTRAR SPECIES HUMAN/ PAG-LASTPAGE
+const showHuman = () =>{
+  document.querySelector('#welcome').style.display="none";
+  document.querySelector('#rick').style.display="none";
+  document.querySelector('#lookFor').style.display="none";
+  document.querySelector('#lastPage').style.display="block";
+  let button = document.querySelector('.humans  ');
+  document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
+};
+document.querySelector('.humans').addEventListener('click', showHuman);
 
-//function episode(){}
+//FUNCION BOTON MOSTRAR EPISODE/ PAG-LASTPAGE
+const showEpisode = () =>{
+  document.querySelector('#welcome').style.display="none";
+  document.querySelector('#rick').style.display="none";
+  document.querySelector('#lookFor').style.display="none";
+  document.querySelector('#lastPage').style.display="block";
+  let button = document.querySelector('.episode');
+  document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
+};
+document.querySelector('.episode').addEventListener('click', showEpisode);
+
 
 //FUNCION BOTON REGRESAR DE PAG 3  A PAG2
 const back =()=>{
