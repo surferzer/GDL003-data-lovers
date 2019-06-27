@@ -34,7 +34,7 @@ const showName = ()=>{
   document.querySelector('#lastPage').style.display="block";
   let boton = document.querySelector('.names');
   document.querySelector('#showData').innerHTML=
-  window.example.filter(RICKANDMORTY.results, boton)+window.example.picture(RICKANDMORTY.results, boton);
+  window.example.filter(RICKANDMORTY.results, boton);
 };
 document.querySelector('.names').addEventListener('click',showName);
 
@@ -50,7 +50,7 @@ const showDead = () =>{
 document.querySelector('.dead').addEventListener('click', showDead);
 
 //FUNCTION ALIVE
-const showAlive = () 
+const showAlive = () =>{
   document.querySelector('#welcome').style.display="none";
   document.querySelector('#rick').style.display="none";
   document.querySelector('#lookFor').style.display="none";
@@ -58,7 +58,7 @@ const showAlive = ()
   let button = document.querySelector('.alive');
   document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
 };
-document.querySelector('.alive').addEventListener('click', showAlive)
+document.querySelector('.alive').addEventListener('click', showAlive);
 
 //FUNCTION ALIENS
 const showAliens =() =>{
@@ -69,7 +69,7 @@ const showAliens =() =>{
   let button = document.querySelector('.aliens');
   document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
 };
-document.querySelector('.aliens').addEventListener('click', showAliens)
+document.querySelector('.aliens').addEventListener('click', showAliens);
 
 //FUNCTION ORIGIN
 const showOrigin =() =>{
@@ -80,7 +80,7 @@ const showOrigin =() =>{
   let button = document.querySelector('.origin');
   document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
 };
-document.querySelector('.origin').addEventListener('click', showOrigin)
+document.querySelector('.origin').addEventListener('click', showOrigin);
 //FUNCTION FEMALE
 const showFemale =() =>{
   document.querySelector('#welcome').style.display="none";
@@ -90,7 +90,7 @@ const showFemale =() =>{
   let button = document.querySelector('.female');
   document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
 };
-document.querySelector('.female').addEventListener('click', showFemale)
+document.querySelector('.female').addEventListener('click', showFemale);
 
 
 //FUNCION BOTON MOSTRAR GENDER MALE/ PAG-LASTPAGE
