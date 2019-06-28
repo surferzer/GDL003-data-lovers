@@ -26,18 +26,82 @@ const knowMore = ()=>{
 };
 document.querySelector('.knowMore').addEventListener('click',knowMore);
 
-//FUNCION BOTON MOSTRAR NOMBRE /PAG-LASTPAGE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//FUNCION BOTON MOSTRAR NOMBRE /PAG-LASTPAGE*********
 const showName = ()=>{
   document.querySelector('#welcome').style.display="none";
   document.querySelector('#rick').style.display="none";
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
-  let boton = document.querySelector('.names');
-
-  let mostrandoImg=window.example.picture(RICKANDMORTY.results);
+  let button = document.querySelector('.names');
   
-  document.querySelector('#showData').innerHTML=
-  window.example.filter(RICKANDMORTY.results, boton)+`<br>`+mostrandoImg;
+  document.querySelector('#showData').innerHTML=`<tr><th colspan="2">You're in Section °° N A M E °° </th></tr> `+
+  window.example.filter(RICKANDMORTY.results, button);
+
 };
 document.querySelector('.names').addEventListener('click',showName);
 
@@ -48,7 +112,8 @@ const showDead = () =>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.dead');
-  document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
+  document.getElementById('showData').innerHTML= `<tr><th colspan="2">You're in Section °° DEAD °° </th></tr> `+
+  window.example.filter(RICKANDMORTY.results, button);
 };
 document.querySelector('.dead').addEventListener('click', showDead);
 
@@ -118,7 +183,7 @@ const showHuman = () =>{
 };
 document.querySelector('.humans').addEventListener('click', showHuman);
 
-//FUNCION BOTON MOSTRAR EPISODE/ PAG-LASTPAGE
+//FUNCION BOTON MOSTRAR EPISODE/ PAG-LASTPAGE *****************
 const showEpisode = () =>{
   document.querySelector('#welcome').style.display="none";
   document.querySelector('#rick').style.display="none";
