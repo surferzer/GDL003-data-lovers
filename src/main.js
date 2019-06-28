@@ -33,8 +33,11 @@ const showName = ()=>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let boton = document.querySelector('.names');
+
+  let mostrandoImg=window.example.picture(RICKANDMORTY.results);
+  
   document.querySelector('#showData').innerHTML=
-  window.example.filter(RICKANDMORTY.results, boton);
+  window.example.filter(RICKANDMORTY.results, boton)+`<br>`+mostrandoImg;
 };
 document.querySelector('.names').addEventListener('click',showName);
 

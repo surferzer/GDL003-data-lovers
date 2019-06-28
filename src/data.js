@@ -96,15 +96,16 @@ const filter = (data, button) => {
 
 
 
-const picture = (data, button) =>{
-  let picData='';
-  if(button.value == "Name"){
+const picture = (data) =>{
+  //console.log(data[0].image);
+    let picData= '';
     for(let i=0;i<data.length;i++){
-      let runner=data[i].image;
+      let runner=`<img src=${data[i].image}>`;
       console.log(data[i].image);
-      picData+=runner+`<br>`;
+      picData+=runner;
     }
-  }
+    console.log(picData);
+    
   return picData;
 };
 
