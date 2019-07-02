@@ -1,19 +1,43 @@
-
+@import url('https://fonts.googleapis.com/css?family=Barriecito&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barriecito|Cabin+Sketch&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barriecito|Cabin+Sketch|Reenie+Beanie&display=swap');
 
 #welcome{
 background-image:url(https://i.ibb.co/t2L8cHw/portadafinal.jpg);
 background-repeat: no-repeat;
 height: 95vh;
 background-size:100% 100%;
+background-attachment: fixed;
 text-align:center;
 }
 
 
 h1{
+  font-family: 'Barriecito', cursive;
+  display: inline-block;
+  position: relative;
    color: #FFFFFF;
-   align-content: center;
-   align-items: center;
+  line-height: 300px;
+  font-size: 50px;
 
+ }
+
+   h1::after, h1::before{
+     content:"";
+     position: absolute;
+     width: 1100px;
+     height: 3px;
+     background-color: currentColor;
+     top:0.06em;
+     transition:all 0.2 ease-in;
+       }
+
+ h1::before{
+   left:-140px;
+ }
+
+ h1::after{
+   left:-140px;
  }
 
 header{
@@ -22,26 +46,30 @@ header{
   align-items: center;
 }
 
-subsection{
+p{
   color: #FFFFFF;
   align-content: center;
-  width: 120px;
+  /*width: 120px;*/
+  float:left;
+  line-height: 55px;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 30px;
+
 }
-
-
-
 
 .knowMore{
   background-color: transparent; /* Green */
-    border: 2px solid #FFFFFF;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
+    border: 2px solid #00FF00;
+    color: #00FF00;
+    padding: 2px 32px;
+    margin-bottom: right;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     border-radius: 6px;
     text-decoration-color: : white;
+font-family: 'Reenie Beanie', cursive;
+font-size: 25px;
 }
 
 .firstButton{
@@ -54,15 +82,16 @@ subsection{
     display: inline-block;
     font-size: 16px;
     border-radius: 6px;
-
-
+    position:absolute;
+    top:250px;
+font-family: 'Reenie Beanie', cursive;
+font-size: 30px;
 }
 
 
-
-
 #rick{
-  background-image: url(https://i.ibb.co/bX019xm/rickportada.jpg);
+  /*background-image: url(https://i.ibb.co/bX019xm/rickportada.jpg);*/
+  background-image: url(https://media.giphy.com/media/3o85xCx3GAeR9RtF7y/giphy.gif);
   background-repeat: no-repeat;
   height:95vh;
   background-size: 100% 100%;
@@ -74,5 +103,167 @@ subsection{
   background-repeat: no-repeat;
   height:95vh;
   background-size: 100% 100%;
+}
 
+.names{
+  background-color: transparent; /* Green */
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 2px 32px;
+    margin-bottom: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration-color: : white;
+font-family: 'Reenie Beanie', cursive;
+font-size: 25px;
+}
+
+.dead{
+  background-color: transparent; /* Green */
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 2px 32px;
+    margin-bottom: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration-color: : white;
+font-family: 'Reenie Beanie', cursive;
+font-size: 25px;
+}
+
+.alive{
+  background-color: transparent; /* Green */
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 2px 32px;
+    margin-bottom: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration-color: : white;
+font-family: 'Reenie Beanie', cursive;
+font-size: 25px;
+}
+
+.aliens{
+  background-color: transparent; /* Green */
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 2px 32px;
+    margin-bottom: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration-color: : white;
+font-family: 'Reenie Beanie', cursive;
+font-size: 25px;
+}
+
+.origin{
+  background-color: transparent; /* Green */
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 2px 32px;
+    margin-bottom: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration-color: : white;
+font-family: 'Reenie Beanie', cursive;
+font-size: 25px;
+}
+
+.female{
+  background-color: transparent; /* Green */
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 2px 32px;
+    margin-bottom: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration-color: : white;
+font-family: 'Reenie Beanie', cursive;
+font-size: 25px;
+}
+
+.male{
+  background-color: transparent; /* Green */
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 2px 32px;
+    margin-bottom: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration-color: : white;
+font-family: 'Reenie Beanie', cursive;
+font-size: 25px;
+}
+
+.humans{
+  background-color: transparent; /* Green */
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 2px 32px;
+    margin-bottom: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration-color: : white;
+font-family: 'Reenie Beanie', cursive;
+font-size: 25px;
+}
+
+.episode{
+  background-color: transparent; /* Green */
+    border: 2px solid #000000;
+    color: #000000;
+    padding: 2px 32px;
+    margin-bottom: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration-color: : white;
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 25px;
+    }
+
+#lastPage{
+background-image: url(https://media.giphy.com/media/o4HMFjAsgPe1y/giphy.gif);
+  /*background-image:url(https://i.ibb.co/g4F2rcP/thumb-1920-1020142.jpg);*/
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 25px;
+  color:white;
+  background-attachment:fixed;
+}
+
+.back{
+  background-color: black; /* Green */
+    border: 2px solid #000000;
+    color: #FFFFFF;
+    padding: 2px 32px;
+    margin-bottom: right;
+    text-decoration: none;
+    display:inline-flex;
+    font-size: 16px;
+    border-radius: 6px;
+    text-decoration-color: : red;
+font-family: 'Reenie Beanie', cursive;
+font-size: 25px;
 }

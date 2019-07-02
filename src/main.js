@@ -26,71 +26,6 @@ const knowMore = ()=>{
 };
 document.querySelector('.knowMore').addEventListener('click',knowMore);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //FUNCION BOTON MOSTRAR NOMBRE /PAG-LASTPAGE*********
 const showName = ()=>{
   document.querySelector('#welcome').style.display="none";
@@ -98,7 +33,7 @@ const showName = ()=>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.names');
-  
+
   document.querySelector('#showData').innerHTML=`<tr><th colspan="2">You're in Section °° N A M E °° </th></tr> `+
   window.example.filter(RICKANDMORTY.results, button);
 
@@ -212,3 +147,10 @@ const back2 = ()=>{
   document.querySelector('#lastPage').style.display="none";
 };
 document.querySelector('.reloadAfter').addEventListener('click',back2);
+
+
+//PORCENTAJE
+const porcentajes=()=>{
+  document.getElementById("porcentaje").innerHTML= window.example.computation(RICKANDMORTY.results);
+};
+document.querySelector(".dead").addEventListener("click", porcentajes);

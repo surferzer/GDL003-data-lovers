@@ -6,134 +6,6 @@ const example = () => {
 };
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const filter = (data, button) => {
   let searchData='';
   let bingo=-1;
@@ -146,11 +18,11 @@ const filter = (data, button) => {
       let runnerPic=`<td><img src=${data[i].image}></td>`;
       searchData+=`<tr>${runnerPic+runner}</tr>`;
     }
-    
+
   }else if(button.value == "Dead"){
     for(let i=0;i<data.length;i++){
       let runner=data[i].status;
-      if(runner== "Dead"){ 
+      if(runner== "Dead"){
         bingo=i;
         let deadFound=`<td>${runner}<td>`;
         console.log(deadFound.length);
@@ -161,7 +33,7 @@ const filter = (data, button) => {
   }else if(button.value == "Alive"){
     for(let i=0;i<data.length;i++){
       let runner=data[i].status;
-      if(runner== "Alive"){ 
+      if(runner== "Alive"){
         bingo=i;
         let aliveFound=`<td>${runner}<td>`;
         console.log(aliveFound.length);
@@ -172,7 +44,7 @@ const filter = (data, button) => {
   }else if(button.value == "Aliens"){
     for(let i=0;i<data.length;i++){
       let runner=data[i].species;
-      if(runner== "Alien"){ 
+      if(runner== "Alien"){
         bingo=i;
         let aliensFound=`<td>${runner}<td>`;
         console.log(aliensFound.length);
@@ -191,7 +63,7 @@ const filter = (data, button) => {
   }else if(button.value == "Female"){
     for(let i=0;i<data.length;i++){
       let runner=data[i].gender;
-      if(runner== "Female"){ 
+      if(runner== "Female"){
         bingo=i;
         let femaleFound=`<td>${runner}<td>`;
         console.log(femaleFound.length);
@@ -202,7 +74,7 @@ const filter = (data, button) => {
   }else if(button.value == "Male"){
     for(let i=0;i<data.length;i++){
       let runner=data[i].gender;
-      if(runner== "Male"){ 
+      if(runner== "Male"){
         bingo=i;
         let maleFound=`<td>${runner}<td>`;
         console.log(maleFound.length);
@@ -213,7 +85,7 @@ const filter = (data, button) => {
   }else if(button.value == "Humans"){
     for(let i=0;i<data.length;i++){
       let runner=data[i].species;
-      if(runner== "Human"){ 
+      if(runner== "Human"){
         bingo=i;
         let humanFound=`<td>${runner}<td>`;
         console.log(humanFound.length);
@@ -228,29 +100,38 @@ const filter = (data, button) => {
       let runnerEpisode=`<td><a href=${runner}></td>`;
       searchData+=`<tr>${runner+runnerEpisode}</tr>`;
     }
-    
+
   }
   //name=myData.results[0].name;
   //console.log(myData.results[0].name);
   return searchData;
 };
 
-
-
 const picture = (data) =>{
     let picData= '';
-    for(let i=0;i<data.length;i++){
+    for(let i=0;i<data.length;i++);
       let runner=`<img src=${data[i].image}>`;
       //console.log(data[i].image);
       picData+=runner;
-    }
+
     console.log(picData);
-    
+
   return picData;
 };
 
-const computation = () =>{
-  return 'computation';
+
+
+const computation= (data) =>{
+let score=0;
+for (i=0; i<data.length; i++){
+let acumulacion=data[i].status;
+if (acumulacion=="Dead"){
+score=score+1;
+}
+}
+console.log(score);
+let estadistica=(score*100)/data.length;
+return estadistica;
 };
 
 
