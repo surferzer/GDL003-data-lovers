@@ -1,9 +1,5 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
-//eval('(' + RICKANDMORTY + ')'); (eval es mas verbose por el doble parentesis)
-const example = () => {
-  return 'example';
-};
 
 
 
@@ -134,28 +130,188 @@ const example = () => {
 
 
 
-const filter = (data, button) => {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const filter = (data, button,count, slideB, slideN) => {
   let searchData='';
-  let bingo=-1;
-
+  let bingo=0;
+  
+  
+  
+  
+  //let c = count;
   if(button.value == "Name"){
-    console.log(data);
+    /*console.log(data);
+    let runner=`</dd>${data[c].name}</dd>`;
+    console.log(data[c].name);
+    let runnerPic=`<dt><img src=${data[c].image}></dt>`;
+    searchData+=runnerPic+runner;
+  */
+
     for(let i=0;i<data.length;i++){
-      let runner=`<td>${data[i].name}<td>`;
+      let runner=`<dd>${data[i].name}</dd>`;
       console.log(data[i].name);
-      let runnerPic=`<td><img src=${data[i].image}></td>`;
-      searchData+=`<tr>${runnerPic+runner}</tr>`;
+      let runnerPic=`<dt><img src=${data[i].image}></dt>`;
+      searchData+=runnerPic+runner;
+         
+    }     
+  }
+
+  /*
+  //El nuevo metodo
+  if(slideN.value == "Next"){
+    c+=1;
+    if(c>492){
+      c=0;
     }
-    
-  }else if(button.value == "Dead"){
+    console.log(data);
+    let runner=`</dd>${data[c].name}</dd>`;
+    console.log(data[c].name);
+    let runnerPic=`<dt><img src=${data[c].image}></dt>`;
+    searchData+=runnerPic+runner;
+  }
+  if(slideB.value == "Before"){
+    c-=1;
+    if(c<0){
+      c=492;
+    }
+    console.log(data);
+    let runner=`</dd>${data[c].name}</dd>`;
+    console.log(data[c].name);
+    let runnerPic=`<dt><img src=${data[c].image}></dt>`;
+    searchData+=runnerPic+runner;
+  }
+  Termina el nuevo método
+*/
+
+//los demas filtros-----------------------------------------------------------------
+else if(button.value == "Dead"){
     for(let i=0;i<data.length;i++){
       let runner=data[i].status;
       if(runner== "Dead"){ 
         bingo=i;
-        let deadFound=`<td>${runner}<td>`;
+        let deadFound=`<dd>${runner}<dd>`;
         console.log(deadFound.length);
-        let runnerPic=`<td><img src=${data[bingo].image}></td>`;
-        searchData+=`<tr>${runnerPic+deadFound}</tr>`;
+        let runnerPic=`<dt><img src=${data[bingo].image}></dt>`;
+        searchData+=runnerPic+deadFound;
+        
       }
     }
   }else if(button.value == "Alive"){
@@ -163,10 +319,10 @@ const filter = (data, button) => {
       let runner=data[i].status;
       if(runner== "Alive"){ 
         bingo=i;
-        let aliveFound=`<td>${runner}<td>`;
+        let aliveFound=`<dd>${runner}<dd>`;
         console.log(aliveFound.length);
-        let runnerPic=`<td><img src=${data[bingo].image}></td>`;
-        searchData+=`<tr>${runnerPic+aliveFound}</tr>`;
+        let runnerPic=`<dt><img src=${data[bingo].image}></dt>`;
+        searchData+=runnerPic+aliveFound;
       }
     }
   }else if(button.value == "Aliens"){
@@ -174,29 +330,29 @@ const filter = (data, button) => {
       let runner=data[i].species;
       if(runner== "Alien"){ 
         bingo=i;
-        let aliensFound=`<td>${runner}<td>`;
+        let aliensFound=`<dt>${runner}<dt>`;
         console.log(aliensFound.length);
-        let runnerPic=`<td><img src=${data[bingo].image}></td>`;
-        searchData+=`<tr>${runnerPic+aliensFound}</tr>`;
+        let runnerPic=`<dd><img src=${data[bingo].image}></dd>`;
+        searchData+=runnerPic+aliensFound;
       }
     }
   }else if(button.value == "Origin"){
     console.log(data);
     for(let i=0;i<data.length;i++){
-      let runner=`<td>${data[i].origin.name}<td>`;
+      let runner=`<dd>${data[i].origin.name}<dd>`;
       console.log(data[i].origin);
-      let runnerPic=`<td><img src=${data[i].image}></td>`;
-      searchData+=`<tr>${runnerPic+runner}</tr>`;
+      let runnerPic=`<dt><img src=${data[i].image}></dt>`;
+      searchData+=runnerPic+runner;
     }
   }else if(button.value == "Female"){
     for(let i=0;i<data.length;i++){
       let runner=data[i].gender;
       if(runner== "Female"){ 
         bingo=i;
-        let femaleFound=`<td>${runner}<td>`;
+        let femaleFound=`<dd>${runner}<dd>`;
         console.log(femaleFound.length);
-        let runnerPic=`<td><img src=${data[bingo].image}></td>`;
-        searchData+=`<tr>${runnerPic+femaleFound}</tr>`;
+        let runnerPic=`<dt><img src=${data[bingo].image}></dt>`;
+        searchData+=runnerPic+femaleFound;
       }
     }
   }else if(button.value == "Male"){
@@ -204,10 +360,10 @@ const filter = (data, button) => {
       let runner=data[i].gender;
       if(runner== "Male"){ 
         bingo=i;
-        let maleFound=`<td>${runner}<td>`;
+        let maleFound=`<dd>${runner}<dd>`;
         console.log(maleFound.length);
-        let runnerPic=`<td><img src=${data[bingo].image}></td>`;
-        searchData+=`<tr>${runnerPic+maleFound}</tr>`;
+        let runnerPic=`<dt><img src=${data[bingo].image}></dt>`;
+        searchData+=runnerPic+maleFound;
       }
     }
   }else if(button.value == "Humans"){
@@ -215,48 +371,39 @@ const filter = (data, button) => {
       let runner=data[i].species;
       if(runner== "Human"){ 
         bingo=i;
-        let humanFound=`<td>${runner}<td>`;
+        let humanFound=`<dd>${runner}<dd>`;
         console.log(humanFound.length);
-        let runnerPic=`<td><img src=${data[bingo].image}></td>`;
-        searchData+=`<tr>${runnerPic+humanFound}</tr>`;
+        let runnerPic=`<dt><img src=${data[bingo].image}></dt>`;
+        searchData+=runnerPic+humanFound;
       }
     }
   }else if(button.value == "Episode"){
     console.log(data);
     for(let i=0;i<data.length;i++){
-      let runner=`<td>${data[i].episode}<td>`;
-      let runnerEpisode=`<td><a href=${runner}></td>`;
-      searchData+=`<tr>${runner+runnerEpisode}</tr>`;
+      let runner=`<dd>${data[i].episode}<dd>`;
+      let runnerEpisode=`<dt><a href=${runner}></dt>`;
+      searchData+=runner+runnerEpisode;
     }
     
   }
   //name=myData.results[0].name;
-  //console.log(myData.results[0].name);
+  //console.log(name);
   return searchData;
 };
 
+const computation = (data) => {
 
+  
 
-const picture = (data) =>{
-    let picData= '';
-    for(let i=0;i<data.length;i++){
-      let runner=`<img src=${data[i].image}>`;
-      //console.log(data[i].image);
-      picData+=runner;
-    }
-    console.log(picData);
-    
-  return picData;
-};
-
-const computation = () =>{
-  return 'computation';
+       
+  return computationData;
 };
 
 
-window.example = {
-example,
+
+
+
+window.dataLovers = {
 filter,
 computation,
-picture
 };

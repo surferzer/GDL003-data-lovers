@@ -1,3 +1,302 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -12,13 +311,12 @@
     <!--PORTADA-->
     <section id="welcome">
     <header><h1>Welcome to Rick & Morty's UNIVERSE </h1></header>
-    <input type="button" value="Pulsa aqui para entrar!"  class="firstButton" >
-
+    <input type="button" value="Pulsa aqui!"  class="firstButton" id="fistBut" >
     </section>
 
     <!--PAGINA 2-->
     <section id="rick" >
-    <h1> Rick & Morty's UNIVERSE </h1>  
+      <h1> Rick & Morty's UNIVERSE </h1>
       <br>
       <subsection>
         <p>
@@ -49,154 +347,22 @@
       <input type="button" value="BACK" class="back" >
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!--PAGINA 4-->
-    <section id="lastPage" >
-      <subsection>
-          <table id="tableData">
-              <thead>
-                <tr>
-                  <th>Image</th>
-                  <th>Data Selected</th>
-                </tr>
-              </thead>
-              <tbody id="showData"></tbody>
-            </table>
-      </subsection>
+    <section id="lastPage" class="container" >
+      <div id="showData" class="showing">
+        <div id="showPercents"></div>
+        <!--aqui va la imagen dinamica-->
+      </div>
+      <!-- <a href="#" class="before" value="Before">&#10094</a>
+      <a href="#" class="next" value="Next">&#10095</a> -->
+      <input type="button" value="Before" class="before" >
+      <input type="button" value="Next" class="next" >
+      <br><br><br>
       <input type="button" value="HOME" class="reload" >
       <input type="button" value="BACK" class="reloadAfter">
     </section>
-
+   
+     
     <script src="./data/rickandmorty/rickandmorty.js"></script>
     <!-- <script src="./data/rickandmorty/rickandmorty.json"></script> -->
     <!-- <script src="./data/injuries/injuries.js"></script>-->
@@ -210,3 +376,16 @@
 
   </body>
 </html>
+<!-- <subsection class="print  ">
+          <table id="tableData">
+              <thead>
+                <tr>
+                  <th>Image</th>
+                  <th>Data Selected</th>
+                </tr>
+              </thead>
+              <tbody id="showData"></tbody>
+            </table>
+      </subsection>
+     -->
+    

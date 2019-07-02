@@ -1,6 +1,6 @@
 require('../src/data.js');
 const RICKANDMORTY = require('../src/data/rickandmorty/rickandmorty.js');
-
+/*
 describe('example', () => {
   it('is a function', () => {
     expect(typeof example.example).toBe('function');
@@ -10,23 +10,23 @@ describe('example', () => {
     expect(example.example()).toBe('example');
   });
 });
-
+*/
 describe('filter',() =>{
   it('is a function', () =>{
-    expect(typeof example.filter).toBe('function');
+    expect(typeof dataLovers.filter).toBe('function');
   });
 
   it('returns `filter`', () => {
-    expect(example.filter(RICKANDMORTY)).toBe('string');
+    expect(dataLovers.filter(RICKANDMORTY)).toBe('string');
   });
 });
 
 describe('computation',()=>{
   it('is a function', ()=>{
-    expect(typeof example.computation).toBe('function');
+    expect(typeof dataLovers.computation).toBe('function');
   });
 
   it('returns `computation`',()=>{
-    expect(example.computation()).toBe('computation');
+    expect(dataLovers.computation()).toBe('computation');
   });
 });
