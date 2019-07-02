@@ -14,12 +14,6 @@ const filter = (data, button,count, slideB, slideN) => {
       searchData+=runnerPic+runner;
          
     }     
-  }
-
-
-//los demas filtros-----------------------------------------------------------------
-else if(button.value == "Dead"){
-
   }else if(button.value == "Dead"){
 
     for(let i=0;i<data.length;i++){
@@ -111,26 +105,6 @@ else if(button.value == "Dead"){
 };
 
 
-const computation = (data) => {
-
-  
-
-       
-  return computationData;
-};
-
-
-const picture = (data) =>{
-    let picData= '';
-    for(let i=0;i<data.length;i++);
-      let runner=`<img src=${data[i].image}>`;
-      //console.log(data[i].image);
-      picData+=runner;
-
-    console.log(picData);
-
-  return picData;
-};
 
 
 
