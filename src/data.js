@@ -1,270 +1,12 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const filter = (data, button,count, slideB, slideN) => {
   let searchData='';
   let bingo=0;
-  
-  
-  
-  
-  //let c = count;
+ 
   if(button.value == "Name"){
-    /*console.log(data);
-    let runner=`</dd>${data[c].name}</dd>`;
-    console.log(data[c].name);
-    let runnerPic=`<dt><img src=${data[c].image}></dt>`;
-    searchData+=runnerPic+runner;
-  */
-
+ 
     for(let i=0;i<data.length;i++){
       let runner=`<dd>${data[i].name}</dd>`;
       console.log(data[i].name);
@@ -274,38 +16,15 @@ const filter = (data, button,count, slideB, slideN) => {
     }     
   }
 
-  /*
-  //El nuevo metodo
-  if(slideN.value == "Next"){
-    c+=1;
-    if(c>492){
-      c=0;
-    }
-    console.log(data);
-    let runner=`</dd>${data[c].name}</dd>`;
-    console.log(data[c].name);
-    let runnerPic=`<dt><img src=${data[c].image}></dt>`;
-    searchData+=runnerPic+runner;
-  }
-  if(slideB.value == "Before"){
-    c-=1;
-    if(c<0){
-      c=492;
-    }
-    console.log(data);
-    let runner=`</dd>${data[c].name}</dd>`;
-    console.log(data[c].name);
-    let runnerPic=`<dt><img src=${data[c].image}></dt>`;
-    searchData+=runnerPic+runner;
-  }
-  Termina el nuevo método
-*/
 
 //los demas filtros-----------------------------------------------------------------
 else if(button.value == "Dead"){
+
+  }else if(button.value == "Dead"){
+
     for(let i=0;i<data.length;i++){
       let runner=data[i].status;
-      if(runner== "Dead"){ 
+      if(runner== "Dead"){
         bingo=i;
         let deadFound=`<dd>${runner}<dd>`;
         console.log(deadFound.length);
@@ -317,7 +36,7 @@ else if(button.value == "Dead"){
   }else if(button.value == "Alive"){
     for(let i=0;i<data.length;i++){
       let runner=data[i].status;
-      if(runner== "Alive"){ 
+      if(runner== "Alive"){
         bingo=i;
         let aliveFound=`<dd>${runner}<dd>`;
         console.log(aliveFound.length);
@@ -328,7 +47,7 @@ else if(button.value == "Dead"){
   }else if(button.value == "Aliens"){
     for(let i=0;i<data.length;i++){
       let runner=data[i].species;
-      if(runner== "Alien"){ 
+      if(runner== "Alien"){
         bingo=i;
         let aliensFound=`<dt>${runner}<dt>`;
         console.log(aliensFound.length);
@@ -347,7 +66,7 @@ else if(button.value == "Dead"){
   }else if(button.value == "Female"){
     for(let i=0;i<data.length;i++){
       let runner=data[i].gender;
-      if(runner== "Female"){ 
+      if(runner== "Female"){
         bingo=i;
         let femaleFound=`<dd>${runner}<dd>`;
         console.log(femaleFound.length);
@@ -358,7 +77,7 @@ else if(button.value == "Dead"){
   }else if(button.value == "Male"){
     for(let i=0;i<data.length;i++){
       let runner=data[i].gender;
-      if(runner== "Male"){ 
+      if(runner== "Male"){
         bingo=i;
         let maleFound=`<dd>${runner}<dd>`;
         console.log(maleFound.length);
@@ -369,7 +88,7 @@ else if(button.value == "Dead"){
   }else if(button.value == "Humans"){
     for(let i=0;i<data.length;i++){
       let runner=data[i].species;
-      if(runner== "Human"){ 
+      if(runner== "Human"){
         bingo=i;
         let humanFound=`<dd>${runner}<dd>`;
         console.log(humanFound.length);
@@ -384,12 +103,13 @@ else if(button.value == "Dead"){
       let runnerEpisode=`<dt><a href=${runner}></dt>`;
       searchData+=runner+runnerEpisode;
     }
-    
+
   }
   //name=myData.results[0].name;
   //console.log(name);
   return searchData;
 };
+
 
 const computation = (data) => {
 
@@ -399,6 +119,33 @@ const computation = (data) => {
   return computationData;
 };
 
+
+const picture = (data) =>{
+    let picData= '';
+    for(let i=0;i<data.length;i++);
+      let runner=`<img src=${data[i].image}>`;
+      //console.log(data[i].image);
+      picData+=runner;
+
+    console.log(picData);
+
+  return picData;
+};
+
+
+
+const computation= (data) =>{
+let score=0;
+for (i=0; i<data.length; i++){
+let acumulacion=data[i].status;
+if (acumulacion=="Dead"){
+score=score+1;
+}
+}
+console.log(score);
+let estadistica=(score*100)/data.length;
+return estadistica;
+};
 
 
 
