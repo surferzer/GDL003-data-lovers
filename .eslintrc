@@ -8,7 +8,7 @@
   "extends": "eslint:recommended",
   "globals": {
     "RICKANDMORTY": false,
-    "example": false
+    "dataLovers": false
   },
   "rules": {
     "no-console": 0,

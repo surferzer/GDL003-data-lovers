@@ -1,4 +1,5 @@
 //INICIO HOME
+
 const welcomeHome = ()=>{
   document.querySelector('#welcome').style.display="block";
   document.querySelector('#rick').style.display="none";
@@ -26,31 +27,39 @@ const knowMore = ()=>{
 };
 document.querySelector('.knowMore').addEventListener('click',knowMore);
 
+
 //FUNCION BOTON MOSTRAR NOMBRE /PAG-LASTPAGE*********
 const showName = ()=>{
   document.querySelector('#welcome').style.display="none";
   document.querySelector('#rick').style.display="none";
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
+ 
+
   let button = document.querySelector('.names');
 
-  document.querySelector('#showData').innerHTML=`<tr><th colspan="2">You're in Section °° N A M E °° </th></tr> `+
-  window.example.filter(RICKANDMORTY.results, button);
+  
+  document.querySelector('#showData').innerHTML='You're in Section °° N A M E °°' +window.dataLovers.filter(RICKANDMORTY.results, button);
 
 };
 document.querySelector('.names').addEventListener('click',showName);
 
+
 //FUNCION BOTON MOSTRAR STATUS DEAD /PAG-LASTPAGE
+
 const showDead = () =>{
   document.querySelector('#welcome').style.display="none";
   document.querySelector('#rick').style.display="none";
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.dead');
-  document.getElementById('showData').innerHTML= `<tr><th colspan="2">You're in Section °° DEAD °° </th></tr> `+
-  window.example.filter(RICKANDMORTY.results, button);
+  document.getElementById('showData').innerHTML= `<p>You're in Section °° DEAD °° </p> `+
+  window.dataLovers.filter(RICKANDMORTY.results, button);
+  document.getElementById('showPercents').innerHTML= `<p>El porcentaje de esta sección es: </p>`+
+  window.dataLovers.computation(RICKANDMORTY.results)+'% '; 
 };
 document.querySelector('.dead').addEventListener('click', showDead);
+
 
 //FUNCTION ALIVE
 const showAlive = () =>{
@@ -59,7 +68,7 @@ const showAlive = () =>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.alive');
-  document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
+  document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.alive').addEventListener('click', showAlive);
 
@@ -70,7 +79,7 @@ const showAliens =() =>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.aliens');
-  document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
+  document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.aliens').addEventListener('click', showAliens);
 
@@ -81,7 +90,7 @@ const showOrigin =() =>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.origin');
-  document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
+  document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.origin').addEventListener('click', showOrigin);
 //FUNCTION FEMALE
@@ -91,7 +100,7 @@ const showFemale =() =>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.female');
-  document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
+  document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.female').addEventListener('click', showFemale);
 
@@ -103,7 +112,7 @@ const showMale = () =>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.male');
-  document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
+  document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.male').addEventListener('click', showMale);
 
@@ -114,7 +123,7 @@ const showHuman = () =>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.humans  ');
-  document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
+  document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.humans').addEventListener('click', showHuman);
 
@@ -125,7 +134,7 @@ const showEpisode = () =>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.episode');
-  document.getElementById('showData').innerHTML= window.example.filter(RICKANDMORTY.results,button);
+  document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.episode').addEventListener('click', showEpisode);
 
