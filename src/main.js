@@ -39,13 +39,18 @@ const showName = ()=>{
   let button = document.querySelector('.names');
 
   
-  document.querySelector('#showData').innerHTML='You're in Section °° N A M E °°' +window.dataLovers.filter(RICKANDMORTY.results, button);
+  document.querySelector('#showData').innerHTML='Youre in Section °° N A M E °°' +window.dataLovers.filter(RICKANDMORTY.results, button);
 
 };
 document.querySelector('.names').addEventListener('click',showName);
 
 
 //FUNCION BOTON MOSTRAR STATUS DEAD /PAG-LASTPAGE
+
+//PORCENTAJE
+const porcentajes=()=>{
+  document.getElementById("porcentaje").innerHTML= window.dataLovers.computation(RICKANDMORTY.results);
+};
 
 const showDead = () =>{
   document.querySelector('#welcome').style.display="none";
@@ -55,10 +60,9 @@ const showDead = () =>{
   let button = document.querySelector('.dead');
   document.getElementById('showData').innerHTML= `<p>You're in Section °° DEAD °° </p> `+
   window.dataLovers.filter(RICKANDMORTY.results, button);
-  document.getElementById('showPercents').innerHTML= `<p>El porcentaje de esta sección es: </p>`+
-  window.dataLovers.computation(RICKANDMORTY.results)+'% '; 
 };
 document.querySelector('.dead').addEventListener('click', showDead);
+document.querySelector(".dead").addEventListener('click', porcentajes);
 
 
 //FUNCTION ALIVE
@@ -158,8 +162,4 @@ const back2 = ()=>{
 document.querySelector('.reloadAfter').addEventListener('click',back2);
 
 
-//PORCENTAJE
-const porcentajes=()=>{
-  document.getElementById("porcentaje").innerHTML= window.example.computation(RICKANDMORTY.results);
-};
-document.querySelector(".dead").addEventListener("click", porcentajes);
+
