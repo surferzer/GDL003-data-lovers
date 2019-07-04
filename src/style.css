@@ -49,13 +49,18 @@ header{
 
 p{
   color: #FFFFFF;
-  align-content: center;
-  /*width: 120px;*/
-  float:left;
-  line-height: 55px;
+  line-height: 30px;
   font-family: 'Reenie Beanie', cursive;
-  font-size: 30px;
-
+  font-size: 35px;
+  font-weight: bold;
+  position: absolute;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	width: 95%;
+  	height: 20%;
+  	margin: auto;
 }
 
 .knowMore{
@@ -63,14 +68,11 @@ p{
     border: 2px solid #00FF00;
     color: #00FF00;
     padding: 2px 32px;
-    margin-bottom: right;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 6px;
-    text-decoration-color: : white;
-font-family: 'Reenie Beanie', cursive;
-font-size: 25px;
+    font-size: 30px;
+    border-radius:6px;
+    font-family: 'Reenie Beanie', cursive;
+    font-weight:bold;
+    float:none;
 }
 
 .firstButton{
@@ -87,6 +89,7 @@ font-size: 25px;
     top:250px;
 font-family: 'Reenie Beanie', cursive;
 font-size: 30px;
+  font-weight:lighter;
 }
 
 
@@ -119,12 +122,13 @@ font-size: 30px;
     text-decoration-color: : white;
 font-family: 'Reenie Beanie', cursive;
 font-size: 25px;
+    font-weight:lighter;
 }
 
 .dead{
   background-color: transparent; /* Green */
     border: 2px solid #000000;
-    color: #000000;
+    color:#000000;
     padding: 2px 32px;
     margin-bottom: right;
     text-decoration: none;
@@ -134,6 +138,7 @@ font-size: 25px;
     text-decoration-color: : white;
 font-family: 'Reenie Beanie', cursive;
 font-size: 25px;
+    font-weight:lighter;
 }
 
 .alive{
@@ -149,6 +154,7 @@ font-size: 25px;
     text-decoration-color: : white;
 font-family: 'Reenie Beanie', cursive;
 font-size: 25px;
+    font-weight:lighter;
 }
 
 .aliens{
@@ -164,6 +170,7 @@ font-size: 25px;
     text-decoration-color: : white;
 font-family: 'Reenie Beanie', cursive;
 font-size: 25px;
+    font-weight:lighter;
 }
 
 .origin{
@@ -179,6 +186,7 @@ font-size: 25px;
     text-decoration-color: : white;
 font-family: 'Reenie Beanie', cursive;
 font-size: 25px;
+  font-weight:lighter;
 }
 
 .female{
@@ -194,6 +202,7 @@ font-size: 25px;
     text-decoration-color: : white;
 font-family: 'Reenie Beanie', cursive;
 font-size: 25px;
+    font-weight:lighter;
 }
 
 .male{
@@ -209,6 +218,7 @@ font-size: 25px;
     text-decoration-color: : white;
 font-family: 'Reenie Beanie', cursive;
 font-size: 25px;
+  font-weight:lighter;
 }
 
 .humans{
@@ -224,6 +234,7 @@ font-size: 25px;
     text-decoration-color: : white;
 font-family: 'Reenie Beanie', cursive;
 font-size: 25px;
+    font-weight:lighter;
 }
 
 .episode{
@@ -239,32 +250,44 @@ font-size: 25px;
     text-decoration-color: : white;
     font-family: 'Reenie Beanie', cursive;
     font-size: 25px;
+      font-weight:lighter;
     }
 
 #lastPage{
-background-image: url(https://media.giphy.com/media/o4HMFjAsgPe1y/giphy.gif);
+background-image: url(https://media.giphy.com/media/fLiCs4dtSYUx2/giphy.gif);
   /*background-image:url(https://i.ibb.co/g4F2rcP/thumb-1920-1020142.jpg);*/
   background-repeat:no-repeat;
   background-size:cover;
   background-position: center;
-  background-attachment: fixed;
+  background-attachment:fixed;
   font-family: 'Reenie Beanie', cursive;
   font-size: 25px;
-  color:white;
-  background-attachment:fixed;
+  color:black;
+  font-weight: bold;
 }
 
 .back{
-  background-color: black; /* Green */
+  background-color: grey; /* Green */
     border: 2px solid #000000;
     color: #FFFFFF;
     padding: 2px 32px;
     margin-bottom: right;
     text-decoration: none;
     display:inline-flex;
-    font-size: 16px;
-    border-radius: 6px;
+        border-radius: 6px;
     text-decoration-color: : red;
 font-family: 'Reenie Beanie', cursive;
 font-size: 25px;
+  font-weight: bold;
 }
+
+#porcentaje{
+  background-color: #FFFFFF;
+  background-attachment: fixed;
+  border-bottom: black;
+  color: black;
+  font-family: 'Barriecito', cursive;
+  font-size: 50px;
+  line-height: 100px;
+  align:center;
+  }

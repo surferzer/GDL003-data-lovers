@@ -4,16 +4,20 @@
 const filter = (data, button,count, slideB, slideN) => {
   let searchData='';
   let bingo=0;
- 
+
   if(button.value == "Name"){
- 
+
     for(let i=0;i<data.length;i++){
       let runner=`<dd>${data[i].name}</dd>`;
       console.log(data[i].name);
       let runnerPic=`<dt><img src=${data[i].image}></dt>`;
       searchData+=runnerPic+runner;
-         
-    }     
+  }
+
+
+//los demas filtros-----------------------------------------------------------------
+
+
   }else if(button.value == "Dead"){
 
     for(let i=0;i<data.length;i++){
@@ -24,7 +28,7 @@ const filter = (data, button,count, slideB, slideN) => {
         console.log(deadFound.length);
         let runnerPic=`<dt><img src=${data[bingo].image}></dt>`;
         searchData+=runnerPic+deadFound;
-        
+
       }
     }
   }else if(button.value == "Alive"){
@@ -108,18 +112,40 @@ const filter = (data, button,count, slideB, slideN) => {
 
 
 
-const computation= (data) =>{
-let score=0;
-for (i=0; i<data.length; i++){
-let acumulacion=data[i].status;
-if (acumulacion=="Dead"){
-score=score+1;
-}
-}
-console.log(score);
-let estadistica=(score*100)/data.length;
-return estadistica;
+const picture = (data) =>{
+    let picData= '';
+    for(let i=0;i<data.length;i++);
+      let runner=`<img src=${data[i].image}>`;
+      //console.log(data[i].image);
+      picData+=runner;
+
+    console.log(picData);
+
+  return picData;
 };
+
+
+//FUNCION COMPUTATION
+const computation= (data) =>{
+  let score=0;
+  for (i=0; i<data.length; i++){
+    let acumulacion=data[i].status;
+    if (acumulacion=="Dead"){
+      score=score+1;
+      //console.log(score)
+    }
+    //score = 0;
+    //  if(acumulacion=="Alive"){
+    //    score=score+1;
+        //console.log(score)
+    //  }
+  }
+  console.log(score);
+  let estadistica=(score*100)/data.length;
+  console.log(estadistica);
+  return estadistica;
+};
+
 
 
 

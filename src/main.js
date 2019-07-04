@@ -34,11 +34,11 @@ const showName = ()=>{
   document.querySelector('#rick').style.display="none";
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
- 
+
 
   let button = document.querySelector('.names');
 
-  
+
   document.querySelector('#showData').innerHTML='Youre in Section °° N A M E °°' +window.dataLovers.filter(RICKANDMORTY.results, button);
 
 };
@@ -49,7 +49,10 @@ document.querySelector('.names').addEventListener('click',showName);
 
 //PORCENTAJE
 const porcentajes=()=>{
-  document.getElementById("porcentaje").innerHTML= window.dataLovers.computation(RICKANDMORTY.results);
+  document.getElementById("porcentaje").innerHTML= "DEAD Characters "+window.dataLovers.computation(RICKANDMORTY.results)+ " %";
+  //document.getElementById("porcentaje").innerHTML="ALIVE Characters "+window.dataLovers.computation(RICKANDMORTY.results)+ " %";
+  //document.getElementById("porcentaje").innerHTML="ALIEN Characters "+window.dataLovers.computation(RICKANDMORTY.results)+ " %";
+  //document.getElementById("porcentaje").innerHTML="HUMAN Characters "+window.dataLovers.computation(RICKANDMORTY.results)+ " %";
 };
 
 const showDead = () =>{
@@ -58,11 +61,11 @@ const showDead = () =>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.dead');
-  document.getElementById('showData').innerHTML= `<p>You're in Section °° DEAD °° </p> `+
+  document.getElementById('showData').innerHTML= ` You're in Section °° DEAD °° `+
   window.dataLovers.filter(RICKANDMORTY.results, button);
 };
 document.querySelector('.dead').addEventListener('click', showDead);
-document.querySelector(".dead").addEventListener('click', porcentajes);
+document.querySelector('.dead').addEventListener('click', porcentajes);
 
 
 //FUNCTION ALIVE
@@ -75,6 +78,7 @@ const showAlive = () =>{
   document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.alive').addEventListener('click', showAlive);
+document.querySelector(".alive").addEventListener('click', porcentajes);
 
 //FUNCTION ALIENS
 const showAliens =() =>{
@@ -86,6 +90,7 @@ const showAliens =() =>{
   document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.aliens').addEventListener('click', showAliens);
+document.querySelector(".aliens").addEventListener('click', porcentajes);
 
 //FUNCTION ORIGIN
 const showOrigin =() =>{
@@ -130,6 +135,7 @@ const showHuman = () =>{
   document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.humans').addEventListener('click', showHuman);
+document.querySelector('.humans').addEventListener('click', porcentajes);
 
 //FUNCION BOTON MOSTRAR EPISODE/ PAG-LASTPAGE *****************
 const showEpisode = () =>{
@@ -160,6 +166,3 @@ const back2 = ()=>{
   document.querySelector('#lastPage').style.display="none";
 };
 document.querySelector('.reloadAfter').addEventListener('click',back2);
-
-
-
