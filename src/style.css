@@ -253,6 +253,23 @@ font-size: 25px;
       font-weight:lighter;
     }
 
+    .ord{
+      background-color: transparent; /* Green */
+        border: 2px solid #000000;
+        color: #000000;
+        padding: 2px 32px;
+        margin-bottom: right;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        border-radius: 6px;
+        text-decoration-color: : white;
+        font-family: 'Reenie Beanie', cursive;
+        font-size: 25px;
+          font-weight:lighter;
+        }
+
+
 #lastPage{
 background-image: url(https://media.giphy.com/media/fLiCs4dtSYUx2/giphy.gif);
   /*background-image:url(https://i.ibb.co/g4F2rcP/thumb-1920-1020142.jpg);*/
@@ -265,6 +282,11 @@ background-image: url(https://media.giphy.com/media/fLiCs4dtSYUx2/giphy.gif);
   color:black;
   font-weight: bold;
 }
+
+
+
+
+
 
 .back{
   background-color: grey; /* Green */

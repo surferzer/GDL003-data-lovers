@@ -35,23 +35,15 @@ y la interfaz construida [aquí](https://app.talento.laboratoria.la/profile/HFOo
 
 ## Resumen del proyecto
 
-En este proyecto **construirás una _página web_ para visualizar un
-_conjunto (set) de datos_** que se adecúe a lo que descubras que tu usuario
-necesita.
+Nuestro proyecto consiste en una pagina web llamada **Rick & Morty's UNIVERSE** la cual te permite acceder a la información de la famosa serie de Rick & Morty.
+En esta pagina podrás encontrar a los personajes de la serie y algunas de sus características.
 
-Esta vez te proponemos una serie de datos de diferentes _temáticas_ para que
-explores y decidas con qué temática te interesa trabajar. Hemos elegido
-específicamente estos sets de datos porque creemos que se adecúan bien a esta
-etapa de tu aprendizaje.
+Cualquier persona puede entrar a nuestra pagina, pero esta diseñada principalmente para los fanáticos que buscan saber un poco más de lo que ya ven en la serie.
 
-Una vez que definas tu área de interés, entiende quién es tu usuario y qué
-necesita saber o ver exactamente; luego podrás construir la interfaz que le
-ayude a interactuar y entender mejor esos datos.
-
-Estos son datos que te proponemos:
+Tu podrás buscar a los personajes de diferentes maneras, según el valor del botón que selecciones, podrás visualizarlos, ordenarlos y a la vez, saber el porcentaje que representan dentro de la serie.
 
 
-- [Pokémon](src/data/pokemon/pokemon.json):
+<!--- [Pokémon](src/data/pokemon/pokemon.json):
   En este set encontrarás una lista con los 151 Pokémon de la región de Kanto,
   junto con sus respectivas estadísticas usadas en el juego [Pokémon GO](pokemongolive.com).
 - [Steam noticias](src/data/steam/steam.json):
@@ -63,7 +55,7 @@ Estos son datos que te proponemos:
   este [link](https://developer.riotgames.com/api-methods/).
 - [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
   Este set nos proporciona la lista de los personajes de la serie Rick and
-  Morty. Puedes revisar la documentación de su API en este [link](https://rickandmortyapi.com). 
+  Morty. Puedes revisar la documentación de su API en este [link](https://rickandmortyapi.com).
 
 
 Como entregable final tendrás una página web que permita **visualizar la data,

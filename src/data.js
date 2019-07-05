@@ -13,8 +13,6 @@ const filter = (data, button,count, slideB, slideN) => {
       let runnerPic=`<dt><img src=${data[i].image}></dt>`;
       searchData+=runnerPic+runner;
   }
-
-
 //los demas filtros-----------------------------------------------------------------
 
 
@@ -129,28 +127,69 @@ const picture = (data) =>{
 const computation= (data) =>{
   let score=0;
   for (i=0; i<data.length; i++){
-    let acumulacion=data[i].status;
-    if (acumulacion=="Dead"){
+  let acumulacion=data[i].status;
+  if (acumulacion=="Dead"){
       score=score+1;
       //console.log(score)
     }
     //score = 0;
     //  if(acumulacion=="Alive"){
-    //    score=score+1;
-        //console.log(score)
-    //  }
+      //  score=score+1;
+      //  console.log(score)
+    //}
   }
-  console.log(score);
+
   let estadistica=(score*100)/data.length;
   console.log(estadistica);
   return estadistica;
 };
 
+//var numbers = [1, 4, 9];
+//var roots = numbers.map(Math.sqrt);
 
 
+//ORDENAR
+const sorting=(data)=>{
+  //let order="";
+
+  // let objetosOrdenados = data.sort().map(results => results.name);
+
+   let order= data.sort(function (a, b) {
+   if (a.name > b.name) {
+     return 1;
+   }
+   if (a.name < b.name) {
+     return -1;
+   }
+
+   // a must be equal to b
+   return 0;
+}).map(order =>`<dd>${order.name}</dd>`);
+
+ console.log(order);
+
+
+
+
+  //for(let i=0;i<data.length;i++){
+  //let so =data[i].name;
+  //console.log(data[i].name);
+  //order+=order.sort(function (a, b) {
+  //if (a.name > b.name) {
+  //  return 1;
+  //}
+  //if (a.name < b.name) {
+  //  return -1;
+  //}
+  // a must be equal to b
+  //return 0;
+//});
+//}
+  return order;
+};
 
 
 window.dataLovers = {
 filter,
-computation,
+computation, sorting
 };

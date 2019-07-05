@@ -28,6 +28,9 @@ const knowMore = ()=>{
 document.querySelector('.knowMore').addEventListener('click',knowMore);
 
 
+
+
+
 //FUNCION BOTON MOSTRAR NOMBRE /PAG-LASTPAGE*********
 const showName = ()=>{
   document.querySelector('#welcome').style.display="none";
@@ -43,6 +46,22 @@ const showName = ()=>{
 
 };
 document.querySelector('.names').addEventListener('click',showName);
+//document.querySelector('.names').addEventListener('doubleclick',sorted);
+
+const showOrder = ()=>{
+  document.querySelector('#welcome').style.display="none";
+  document.querySelector('#rick').style.display="none";
+  document.querySelector('#lookFor').style.display="none";
+  document.querySelector('#lastPage').style.display="block";
+
+
+  let button = document.querySelector('.order');
+  console.log(window.dataLovers.sorting(RICKANDMORTY.results));
+  let prueba = window.dataLovers.sorting(RICKANDMORTY.results);
+  document.querySelector('#showData').innerHTML='Youre in Section °° ORDER CHARACTERS °°' + prueba;
+
+};
+document.querySelector('.ord').addEventListener('click',showOrder);
 
 
 //FUNCION BOTON MOSTRAR STATUS DEAD /PAG-LASTPAGE
