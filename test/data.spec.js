@@ -27,6 +27,15 @@ describe('computation',()=>{
   });
 
   it('returns `computation`',()=>{
-    expect(dataLovers.computation()).toBe('computation');
+    expect(dataLovers.computation()).toBe('string');
+  });
+});
+describe('sorting',()=>{
+  it('is a function', ()=>{
+    expect(typeof dataLovers.sorting).toBe('function');
+  });
+
+  it('returns `sorting`',()=>{
+    expect(dataLovers.sorting()).toBe('string');
   });
 });

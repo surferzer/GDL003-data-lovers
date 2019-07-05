@@ -42,7 +42,8 @@ const showName = ()=>{
   let button = document.querySelector('.names');
 
 
-  document.querySelector('#showData').innerHTML='Youre in Section °° N A M E °°' +window.dataLovers.filter(RICKANDMORTY.results, button);
+  document.querySelector('#showData').innerHTML='Youre in Section °° N A M E °°'
+   +window.dataLovers.filter(RICKANDMORTY.results, button);
 
 };
 document.querySelector('.names').addEventListener('click',showName);
@@ -85,7 +86,7 @@ const showDead = () =>{
 };
 document.querySelector('.dead').addEventListener('click', showDead);
 document.querySelector('.dead').addEventListener('click', porcents);
-
+  
 
 //FUNCTION ALIVE
 const showAlive = () =>{
@@ -94,10 +95,10 @@ const showAlive = () =>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.alive');
-  document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
+  document.getElementById('showData').innerHTML= ` You're in Section °° ALIVE °° `+ window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.alive').addEventListener('click', showAlive);
-document.querySelector(".alive").addEventListener('click', porcents);
+//document.querySelector(".alive").addEventListener('click', porcents);
 
 //FUNCTION ALIENS
 const showAliens =() =>{
@@ -106,10 +107,10 @@ const showAliens =() =>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.aliens');
-  document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
+  document.getElementById('showData').innerHTML= ` You're in Section °° ALIENS °° ` + window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.aliens').addEventListener('click', showAliens);
-document.querySelector(".aliens").addEventListener('click', porcents);
+//document.querySelector(".aliens").addEventListener('click', porcents);
 
 //FUNCTION ORIGIN
 const showOrigin =() =>{
@@ -118,7 +119,7 @@ const showOrigin =() =>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.origin');
-  document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
+  document.getElementById('showData').innerHTML= ` You're in Section °° ORIGIN °° `+ window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.origin').addEventListener('click', showOrigin);
 //FUNCTION FEMALE
@@ -128,7 +129,7 @@ const showFemale =() =>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.female');
-  document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
+  document.getElementById('showData').innerHTML= ` You're in Section °° FEMALE °° ` + window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.female').addEventListener('click', showFemale);
 
@@ -140,7 +141,7 @@ const showMale = () =>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.male');
-  document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
+  document.getElementById('showData').innerHTML= ` You're in Section °° MALE °° ` + window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.male').addEventListener('click', showMale);
 
@@ -151,10 +152,10 @@ const showHuman = () =>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.humans  ');
-  document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
+  document.getElementById('showData').innerHTML= ` You're in Section °° HUMANS °° ` + window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.humans').addEventListener('click', showHuman);
-document.querySelector('.humans').addEventListener('click', porcents);
+//document.querySelector('.humans').addEventListener('click', porcents);
 
 //FUNCION BOTON MOSTRAR EPISODE/ PAG-LASTPAGE *****************
 const showEpisode = () =>{
@@ -163,7 +164,7 @@ const showEpisode = () =>{
   document.querySelector('#lookFor').style.display="none";
   document.querySelector('#lastPage').style.display="block";
   let button = document.querySelector('.episode');
-  document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
+  document.getElementById('showData').innerHTML= ` You're in Section °° EPISODES °° ` + window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.episode').addEventListener('click', showEpisode);
 

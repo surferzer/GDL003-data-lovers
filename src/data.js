@@ -132,9 +132,9 @@ const computation= (data) =>{
       //console.log(score)
     }
     }
-    //score = 0;
-    //  if(acumulacion=="Alive"){
-      //  score=score+1;
+
+  //if(acumulacion=="Alive"){
+    //    score=score+1;
       //  console.log(score)
     //}
 
@@ -156,7 +156,8 @@ const sorting=(data)=>{
      return -1;
    }
      return 0;
-}).map(order =>`<dd>${order.name}</dd>`);
+}).map(order =>`<dd>${order.name}</dd>` + `<dt><img src=${order.image}></dt>`);
+
 
  console.log(order);
 
