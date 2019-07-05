@@ -284,10 +284,6 @@ background-image: url(https://media.giphy.com/media/fLiCs4dtSYUx2/giphy.gif);
 }
 
 
-
-
-
-
 .back{
   background-color: grey; /* Green */
     border: 2px solid #000000;
@@ -301,6 +297,7 @@ background-image: url(https://media.giphy.com/media/fLiCs4dtSYUx2/giphy.gif);
 font-family: 'Reenie Beanie', cursive;
 font-size: 25px;
   font-weight: bold;
+  display:scroll;
 }
 
 #porcent{
@@ -314,6 +311,42 @@ font-size: 25px;
   align:center;
   }
 
+.reload{
+  display:scroll;
+          position:fixed;
+          bottom:20px;
+          right:0px;
+          background-color: grey; /* Green */
+            border: 2px solid #000000;
+            color: #FFFFFF;
+            padding: 2px 32px;
+            margin-bottom: right;
+            text-decoration: none;
+            border-radius: 6px;
+            text-decoration-color: : red;
+            font-family: 'Reenie Beanie', cursive;
+            font-size: 25px;
+            font-weight: bold;
+}
+
+.reloadAfter{
+  display:scroll;
+          position:fixed;
+          bottom:20px;
+          right:120px;
+          background-color: grey; /* Green */
+          border: 2px solid #000000;
+          color: #FFFFFF;
+          padding: 2px 32px;
+          margin-bottom: right;
+          text-decoration: none;
+          border-radius: 6px;
+          text-decoration-color: : red;
+          font-family: 'Reenie Beanie', cursive;
+          font-size: 25px;
+          font-weight: bold;
+
+}
 
 @media screen and (max width: 400px){
   #all{
