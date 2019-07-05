@@ -67,8 +67,8 @@ document.querySelector('.ord').addEventListener('click',showOrder);
 //FUNCION BOTON MOSTRAR STATUS DEAD /PAG-LASTPAGE
 
 //PORCENTAJE
-const porcentajes=()=>{
-  document.getElementById("porcentaje").innerHTML= "DEAD Characters "+window.dataLovers.computation(RICKANDMORTY.results)+ " %";
+const porcents=()=>{
+  document.getElementById("porcent").innerHTML= "DEAD Characters "+window.dataLovers.computation(RICKANDMORTY.results)+ " %";
   //document.getElementById("porcentaje").innerHTML="ALIVE Characters "+window.dataLovers.computation(RICKANDMORTY.results)+ " %";
   //document.getElementById("porcentaje").innerHTML="ALIEN Characters "+window.dataLovers.computation(RICKANDMORTY.results)+ " %";
   //document.getElementById("porcentaje").innerHTML="HUMAN Characters "+window.dataLovers.computation(RICKANDMORTY.results)+ " %";
@@ -84,7 +84,7 @@ const showDead = () =>{
   window.dataLovers.filter(RICKANDMORTY.results, button);
 };
 document.querySelector('.dead').addEventListener('click', showDead);
-document.querySelector('.dead').addEventListener('click', porcentajes);
+document.querySelector('.dead').addEventListener('click', porcents);
 
 
 //FUNCTION ALIVE
@@ -97,7 +97,7 @@ const showAlive = () =>{
   document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.alive').addEventListener('click', showAlive);
-document.querySelector(".alive").addEventListener('click', porcentajes);
+document.querySelector(".alive").addEventListener('click', porcents);
 
 //FUNCTION ALIENS
 const showAliens =() =>{
@@ -109,7 +109,7 @@ const showAliens =() =>{
   document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.aliens').addEventListener('click', showAliens);
-document.querySelector(".aliens").addEventListener('click', porcentajes);
+document.querySelector(".aliens").addEventListener('click', porcents);
 
 //FUNCTION ORIGIN
 const showOrigin =() =>{
@@ -154,7 +154,7 @@ const showHuman = () =>{
   document.getElementById('showData').innerHTML= window.dataLovers.filter(RICKANDMORTY.results,button);
 };
 document.querySelector('.humans').addEventListener('click', showHuman);
-document.querySelector('.humans').addEventListener('click', porcentajes);
+document.querySelector('.humans').addEventListener('click', porcents);
 
 //FUNCION BOTON MOSTRAR EPISODE/ PAG-LASTPAGE *****************
 const showEpisode = () =>{
