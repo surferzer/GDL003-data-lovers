@@ -23,7 +23,7 @@ const filter = (data, button) => {
         bingo=i;
         let deadFound=`<dd>${runner}<dd>`;
         console.log(deadFound.length);
-        let runnerPic=`<dt><img src=${data[bingo].image}></dt>`;
+        let runnerPic=`<dt><img src=${data[bingo].image}></dt>` + `<dd>${data[i].name}</dd>`;
         searchData+=runnerPic+deadFound;
 
       }
@@ -35,7 +35,7 @@ const filter = (data, button) => {
         bingo=i;
         let aliveFound=`<dd>${runner}<dd>`;
         console.log(aliveFound.length);
-        let runnerPic=`<dt><img src=${data[bingo].image}></dt>`;
+        let runnerPic=`<dt><img src=${data[bingo].image}></dt>`+`<dd>${data[i].name}</dd>`;
         searchData+=runnerPic+aliveFound;
       }
     }
@@ -46,7 +46,7 @@ const filter = (data, button) => {
         bingo=i;
         let aliensFound=`<dt>${runner}<dt>`;
         console.log(aliensFound.length);
-        let runnerPic=`<dd><img src=${data[bingo].image}></dd>`;
+        let runnerPic=`<dd><img src=${data[bingo].image}></dd>` + `<dd>${data[i].name}</dd>`;
         searchData+=runnerPic+aliensFound;
       }
     }
@@ -55,7 +55,7 @@ const filter = (data, button) => {
     for(let i=0;i<data.length;i++){
       let runner=`<dd>${data[i].origin.name}<dd>`;
       console.log(data[i].origin);
-      let runnerPic=`<dt><img src=${data[i].image}></dt>`;
+      let runnerPic=`<dt><img src=${data[i].image}></dt>` + `<dd>${data[i].name}</dd>`;
       searchData+=runnerPic+runner;
     }
   }else if(button.value == "Female"){
@@ -65,7 +65,7 @@ const filter = (data, button) => {
         bingo=i;
         let femaleFound=`<dd>${runner}<dd>`;
         console.log(femaleFound.length);
-        let runnerPic=`<dt><img src=${data[bingo].image}></dt>`;
+        let runnerPic=`<dt><img src=${data[bingo].image}></dt>` + `<dd>${data[i].name}</dd>`;
         searchData+=runnerPic+femaleFound;
       }
     }
@@ -76,7 +76,7 @@ const filter = (data, button) => {
         bingo=i;
         let maleFound=`<dd>${runner}<dd>`;
         console.log(maleFound.length);
-        let runnerPic=`<dt><img src=${data[bingo].image}></dt>`;
+        let runnerPic=`<dt><img src=${data[bingo].image}></dt>` + `<dd>${data[i].name}</dd>`;
         searchData+=runnerPic+maleFound;
       }
     }
@@ -87,7 +87,7 @@ const filter = (data, button) => {
         bingo=i;
         let humanFound=`<dd>${runner}<dd>`;
         console.log(humanFound.length);
-        let runnerPic=`<dt><img src=${data[bingo].image}></dt>`;
+        let runnerPic=`<dt><img src=${data[bingo].image}></dt>` + `<dd>${data[i].name}</dd>`;
         searchData+=runnerPic+humanFound;
       }
     }
