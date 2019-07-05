@@ -14,8 +14,8 @@
 
 ---
 
-## Preámbulo
 
+<!--
 Según un [estudio de IBM](https://www-01.ibm.com/common/ssi/cgi-bin/ssialias?htmlfid=WRL12345USEN),
 el 90% de la data que existe hoy ha sido creada durante los últimos dos años.
 Cada día generamos 2.5 trillones de bytes de datos, una cifra sin precedentes.
@@ -32,7 +32,7 @@ izquierda se puede construir una interfaz amigable y entendible por el usuario.
 
 \* Puedes ver el detalle de la data [aquí](https://gist.github.com/lalogf/dd4aa3017a9f8aa8f90dfbca382c4dc9#file-student-json)
 y la interfaz construida [aquí](https://app.talento.laboratoria.la/profile/HFOoMpOreBU2psCcjjLg5O2EWEv2).
-
+-->
 ## Resumen del proyecto
 
 Nuestro proyecto consiste en una pagina web llamada **Rick & Morty's UNIVERSE** la cual te permite acceder a la información de la famosa serie de Rick & Morty.
@@ -108,101 +108,108 @@ Los criterios para considerar que has completado este proyecto son:
 
 Documenta brevemente tu trabajo en el archivo `README.md` de tu repositorio,
 contándonos cómo fue tu proceso de diseño y cómo crees que el producto resuelve
-el problema (o problemas) que tiene tu usuario.
+el problema (o problemas) que tiene tu usuario.-->
 
 ### Historias de usuario
 
-Una vez que entiendas las necesidades de tu usuario, escribe las [Historias
+HISTORIA DE USUARIO #1
+El usuario quiere saber los nombres de los personajes de la serie Rick & Morty y su foto para poder conocerlos mejor.
+DOD: Cuando al dar "click" en el botón "Nombre" aparece una lista con el nombre completo y foto de cada personaje de la serie.
+
+HISTORIA DE USUARIO #2
+El usuario quiere buscar a los personajes de la serie Rick & Morty por características especiales para encontrarlos más fácil.
+DOD: Cuando al dar "click" en el botón "Dead" aparecen solo los personajes muertos.
+En este caso podría buscarse tambien por otras características, ya que hay varios botones de filtrado.
+
+HISTORIA DE USUARIO #3
+El usuario quiere saber que porcentaje de personajes de la serie Rick & Morty están muertos para ver si hay mas muertos que vivos.
+DOD: Cuando al dar "click" en el boton "Dead" aparece hasta arriba el porcentaje de personajes muertos que hay en la serie.
+
+
+<!--Una vez que entiendas las necesidades de tu usuario, escribe las [Historias
 de Usuario](https://es.wikipedia.org/wiki/Historias_de_usuario) que representen
 todo lo que el usuario necesita hacer/ver. Asegúrate de incluir una definición
-de terminado (_definition of done_) para cada una.
+de terminado (_definition of done_) para cada una.-->
 
 ### Diseño de la Interfaz de Usuario
-
 #### Prototipo de baja fidelidad
+Comenzamos a diseñar la interfaz de Usuario según nuestras ideas y conclusiones sin conocer aun las necesidades de nuestros usuarios reales; nos dimos a la tarea de diseñar un prototipo de baja fidelidad a lápiz y papel, que después sufrió algunas modificaciones por efecto de un mejor funcionamiento y opiniones de usuarios.
+(https://i.ibb.co/Js0vqQ6/66411847-2348045751940769-230591442592989184-n.jpg)
 
-Durante tu trabajo deberás haber hecho e iterado sketches (boceto) de tu
+
+### Diseño de experiencia de usuario (User Experience Design)
+
+Basándonos en las opiniones de 6 usuarios y/o fans de la serie Rick & Morty, nuestra idea se fue modificando, ya que obtuvimos los siguientes resultados:
+(https://i.ibb.co/8chQtN1/65978413-431245624386944-7414053652517617664-n.jpg)
+
+Así fue como decidimos elegir nuestros botones de búsqueda y la estadística que nuestra pagina debería mostrar.
+
+<!--Durante tu trabajo deberás haber hecho e iterado sketches (boceto) de tu
 solución usando papel y lápiz. Te recomendamos tomar fotos de todas las
 iteraciones que realices y las subas a tu repositorio, y las menciones en tu
-`README.md`.
+`README.md`.-->
 
 #### Prototipo de alta fidelidad
 
-Lo siguiente es diseñar tu Interfaz de Usuario (UI por sus siglas en inglés -
-_User Interface_). Para eso debes aprender a utilizar alguna herramienta de
-diseño visual. Nosotros te recomendamos [Figma](https://www.figma.com/) que es
-una herramienta que funciona en el navegador y, además, puedes crear una cuenta
-gratis. Sin embargo, eres libre de utilizar otros editores gráficos como
-Illustrator, Photoshop, PowerPoint, Keynote, etc.
+A continuación nos volcamos en diseñar nuestra interfaz de usuario.
+Logramos diseñar dos productos diferentes pero con la misma intención, uno en FIGMA y otro en MARVEL, los cuales mostramos en los siguientes links:
 
-El diseño debe representar el _ideal_ de tu solución. Digamos que es lo que
-desearías implementar si tuvieras tiempo ilimitado para hackear. Además, tu
-diseño debe seguir los fundamentos de _visual design_. También, te recomendamos exportar
-tu diseño a [Zeplin](https://zeplin.io/) y podrías utilizar las especificaciones de
-estilo que te proporcione Zeplin al momento de implementar tus diseños en código.
+Prototipo de Alta fidelidad MARVEL:  (https://marvelapp.com/61ba9ii/screen/58479347)
+Prototipo de Alta fidelidad FIGMA:   (https://www.figma.com/file/ElCakf6T6kV2nDMAwPj6zPvR/%C2%A1RICK-AND-MORTY%C5%9A-UNIVERSE!?node-id=16%3A2)
+
+
 
 #### Testeos de usabilidad
 
-Durante el reto deberás realizar tests de usabilidad con distintos usuarios, y
+Nuestros test de usabilidad están aun en prueba, ya que tenemos algunos problemas para que pasen completamente.
+-El test no reconoce la data del archivo .js
+<!--Durante el reto deberás realizar tests de usabilidad con distintos usuarios, y
 en base a los resultados de esos tests, deberás iterar tus diseños. Cuéntanos
 qué problemas de usabilidad detectaste a través de los tests y cómo los
-mejoraste en tu propuesta final.
+mejoraste en tu propuesta final.-->
 
 ### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
 
-Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
-Como mencionamos, **no** es necesario que construyas la interfaz tal como la
-diseñaste. Tendrás un tiempo limitado para hackear, así es que deberás
-priorizar.
+Luego de diseñar nuestra interfaz de usuario trabajamos en su implementación.
 
-Como mínimo, tu implementación debe:
 
-1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista, etc.
-2. Permitir al usuario filtrar y ordenar la data.
-3. Calcular estadísticas de la colección (o subcolección) como media aritmética,
-   máximo y/o mínimo de algún atributo numérico, o contar cuántas veces aparece
-   un determinado valor, por ejemplo.
-4. Visualizarse sin problemas desde distintos tamaños de pantallas: móviles,
+1. Mostramos la data en una interfaz, en forma de lista.
+2. Permitimos al usuario filtrar y ordenar la data.
+3. Calcula estadística (promedio) de la colección. Por ejemplo, nos dice que porcentaje de personajes estan muertos.
+4. Se visualiza sin problemas desde distintos tamaños de pantallas: móviles,
    tablets y desktops.
 
-Es importante que tu interfaz, a pesar de ser una versión mínima de tu ideal,
-siga los fundamentos de _visual design_.
 
 ### Pruebas unitarias
 
-El _boilerplate_ de este proyecto no incluye pruebas unitarias, pero esperamos
-que escribas tus propias pruebas unitarias para las funciones encargadas de
+Escribimos nuestras propias pruebas unitarias para las funciones encargadas de
 _procesar_, _filtrar_ y _ordenar_ la data, así como _calcular_ estadísticas.
-Para ello te recomendamos implementar las siguientes funciones en el archivo
+
+Para ello implementamos las siguientes funciones en el archivo
 `src/data.js`:
 
-- `filterData(data, condition)`: esta función `filter` o filtrar recibiría la
-  data, y nos retornaría aquellos datos que sí cumplan con la condición.
+- `filter(data, condition)`: esta función `filter` o filtrar recibe la
+  data, y nos retorna aquellos datos que sí cumplan con la condición.
 
-- `sortData(data, sortBy, sortOrder)`: esta función `sort` u ordenar
-  recibe tres parámetros.
+- `sorting(data, order)`: esta función de ordenar
+  recibe dos parámetros.
   El primer parámetro, `data`, nos entrega los datos.
-  El segundo parámetro, `sortBy`, nos dice con respecto a cuál de los campos de
+  El segundo parámetro, `data.name`, nos dice con respecto a cuál de los campos de
   la data se quiere ordenar.
-  El tercer parámetro, `sortOrder`, indica si se quiere ordenar de manera
-  ascendente o descendente.
+  El tercer parámetro, `order`, indica si se quiere ordenar de manera
+  descendente.
 
-- `computeStats(data)`: la función `compute` o calcular, nos permitirá hacer
+- `computation(data)`: la función de calcular, nos permite hacer
   cálculos estadísticos básicos para ser mostrados de acuerdo a la data
   proporcionada.
 
-Estas son propuestas de funciones que podrías implementar.
-
-El archivo `src/data.js` debe tener una cobertura del 70% de _statements_
-(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
-(_ramas_).
 
 **Estas funciones deben ser [_puras_](https://medium.com/laboratoria-developers/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-2-funciones-puras-b99e08c2895d)
 e independientes del DOM**. Estas funciones serán después usadas desde el archivo
 `src/main.js`, al cargar la página, y cada vez que el usuario interactúe (click,
 filtrado, ordenado, ...).
 
-## Hacker edition
+<!--## Hacker edition
 
 Features/características extra sugeridas:
 
@@ -353,10 +360,7 @@ Cuando ya estés lista para codear, te sugerimos empezar de esta manera:
 
 ## Contenido de referencia
 
-### Diseño de experiencia de usuario (User Experience Design)
 
-- Investigación con usuarios / entrevistas
-- Principios de diseño visual
 
 ### Desarrollo Front-end
 

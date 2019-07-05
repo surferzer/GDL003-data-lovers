@@ -55,7 +55,7 @@ const showOrder = ()=>{
   document.querySelector('#lastPage').style.display="block";
 
 
-  let button = document.querySelector('.order');
+  //let button = document.querySelector('.order');
   console.log(window.dataLovers.sorting(RICKANDMORTY.results));
   let prueba = window.dataLovers.sorting(RICKANDMORTY.results);
   document.querySelector('#showData').innerHTML='Youre in Section °° ORDER CHARACTERS °°' + prueba;

@@ -1,12 +1,11 @@
 // esta es una función de ejemplo
 // puedes ver como agregamos la función a nuestro objeto global window
 
-const filter = (data, button,count, slideB, slideN) => {
+const filter = (data, button) => {
   let searchData='';
   let bingo=0;
 
-  if(button.value == "Name"){
-
+    if(button.value == "Name"){
     for(let i=0;i<data.length;i++){
       let runner=`<dd>${data[i].name}</dd>`;
       console.log(data[i].name);
@@ -110,81 +109,57 @@ const filter = (data, button,count, slideB, slideN) => {
 
 
 
-const picture = (data) =>{
-    let picData= '';
-    for(let i=0;i<data.length;i++);
-      let runner=`<img src=${data[i].image}>`;
-      //console.log(data[i].image);
-      picData+=runner;
+//const picture = (data) =>{
+//    let picData= '';
+//    for(let i=0;i<data.length;i++);
+//      let runner=`<img src=${data[i].image}>`;
+//      //console.log(data[i].image);
+//      picData+=runner;
 
-    console.log(picData);
+//    console.log(picData);
 
-  return picData;
-};
+//  return picData;
+//};
 
 
 //FUNCION COMPUTATION
 const computation= (data) =>{
   let score=0;
-  for (i=0; i<data.length; i++){
+  for (let i=0; i<data.length; i++){
   let acumulacion=data[i].status;
   if (acumulacion=="Dead"){
       score=score+1;
       //console.log(score)
+    }
     }
     //score = 0;
     //  if(acumulacion=="Alive"){
       //  score=score+1;
       //  console.log(score)
     //}
-  }
 
   let estadistica=(score*100)/data.length;
   console.log(estadistica);
   return estadistica;
 };
 
-//var numbers = [1, 4, 9];
-//var roots = numbers.map(Math.sqrt);
 
 
 //ORDENAR
 const sorting=(data)=>{
-  //let order="";
-
-  // let objetosOrdenados = data.sort().map(results => results.name);
 
    let order= data.sort(function (a, b) {
    if (a.name > b.name) {
      return 1;
-   }
-   if (a.name < b.name) {
+
+   }if (a.name < b.name) {
      return -1;
    }
-
-   // a must be equal to b
-   return 0;
+     return 0;
 }).map(order =>`<dd>${order.name}</dd>`);
 
  console.log(order);
 
-
-
-
-  //for(let i=0;i<data.length;i++){
-  //let so =data[i].name;
-  //console.log(data[i].name);
-  //order+=order.sort(function (a, b) {
-  //if (a.name > b.name) {
-  //  return 1;
-  //}
-  //if (a.name < b.name) {
-  //  return -1;
-  //}
-  // a must be equal to b
-  //return 0;
-//});
-//}
   return order;
 };
 
