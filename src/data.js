@@ -140,7 +140,7 @@ const computation= (data) =>{
 
   let estadistica=(score*100)/data.length;
   console.log(estadistica);
-  return estadistica;
+  return estadistica.toFixed(1);
 };
 
 

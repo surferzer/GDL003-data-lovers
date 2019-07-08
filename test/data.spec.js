@@ -11,31 +11,37 @@ describe('example', () => {
   });
 });
 */
+
+
+//FILTER
 describe('filter',() =>{
   it('is a function', () =>{
     expect(typeof dataLovers.filter).toBe('function');
   });
 
   it('returns `filter`', () => {
-    expect(dataLovers.filter(RICKANDMORTY)).toBe('string');
+    expect(dataLovers.filter(RICKANDMORTY, "results", "name")).toBe('Rick Sanchez');
   });
 });
 
+//COMPUTATION
 describe('computation',()=>{
   it('is a function', ()=>{
     expect(typeof dataLovers.computation).toBe('function');
   });
 
   it('returns `computation`',()=>{
-    expect(dataLovers.computation()).toBe('string');
+    expect(dataLovers.computation(RICKANDMORTY, "status")).toBe("string");
   });
 });
+
+//SORTING
 describe('sorting',()=>{
   it('is a function', ()=>{
     expect(typeof dataLovers.sorting).toBe('function');
   });
 
-  it('returns `sorting`',()=>{
-    expect(dataLovers.sorting()).toBe('string');
+  it('returns `sorting`',(RICKANDMORTY)=>{
+    expect(dataLovers.sorting(RICKANDMORTY, "name")).toBe('order');
   });
 });
