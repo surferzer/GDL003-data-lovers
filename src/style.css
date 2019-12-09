@@ -67,12 +67,13 @@ p{
   background-color: transparent; /* Green */
     border: 2px solid #00FF00;
     color: #00FF00;
-    padding: 5%;
+    padding: 2px 32px;
     font-size: 30px;
     border-radius:6px;
     font-family: 'Reenie Beanie', cursive;
     font-weight:bold;
-    float:none;
+    position: relative;
+  
 }
 
 .firstButton{
@@ -308,7 +309,7 @@ font-size: 25px;
   font-family: 'Barriecito', cursive;
   font-size: 50px;
   line-height: 100px;
-  align:center;
+  text-align:center;
   }
 
 .reload{
